@@ -8,7 +8,7 @@ module.exports = {
     siteLanguage: `en`,
     siteImage: `/icon.png`,
     author: `@osaremochi`, //twitter account id
-    basePath: '/'
+    basePath: `/`
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -32,6 +32,44 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://gatsby-starter-hpp.netlify.com`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://gatsby-starter-hpp.netlify.com`,
+        sitemap: `https://gatsby-starter-hpp.netlify.com/sitemap.xml`,
+        policy: [{ userAgent: `*`, allow: `/` }]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-webpack-bundle-analyzer`,
+      options: {
+        openAnalyzer: false
+      }
+    },
+    // gatsby-plugin-manifest should be described before gatsby-plugin-offline
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Gatsby Starter hpp`,
+        short_name: `hpp`,
+        description: `simple gatsby starter with mdx, typescript, pwa`,
+        Scope: `/`,
+        start_url: `/?utm_source=homescreen`,
+        background_color: `#ffffffff`,
+        theme_color: `#090909ff`,
+        display: `standalone`,
+        icon: `./icon.png`
+      }
+    },
+    `gatsby-plugin-offline`
   ]
 };
