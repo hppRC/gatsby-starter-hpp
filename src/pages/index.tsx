@@ -4,13 +4,23 @@ import { SEO } from '../components';
 import styled from '@emotion/styled';
 import baseStyle from '../styles/base-style';
 
-export const Index = () => (
-  <Layout>
-    <SEO title='Top' description='top page' pathname='/' />
+type Props = {
+  className?: string;
+};
+
+const Index: React.FC<Props> = ({ className }) => (
+  <div className={className}>
     <h1>Hello!</h1>
-  </Layout>
+  </div>
 );
 
-export default styled(Index)`
-  ${baseStyle}
+const StyledIndex = styled(Index)`
+  ${baseStyle};
 `;
+
+export default () => (
+  <Layout>
+    <SEO title='Top' description='top page' pathname='/' />
+    <StyledIndex />
+  </Layout>
+);
