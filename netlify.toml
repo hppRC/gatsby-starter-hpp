@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+  command = "yarn build"
+
+[build.environment]
+  YARN_VERSION = "1.19.1"
+  NODE_VERSION = "12.13.0"
+  YARN_FLAGS = "--no-ignore-optional"
+  NODE_OPTIONS = "--max_old_space_size=4096"
