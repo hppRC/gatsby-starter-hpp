@@ -64,8 +64,8 @@ module.exports = {
         description: `simple gatsby starter with mdx, typescript, pwa`,
         Scope: `/`,
         start_url: `/?utm_source=homescreen`,
-        background_color: `#ffffffff`,
-        theme_color: `#090909ff`,
+        background_color: `#ffffff`,
+        theme_color: `#090909`,
         display: `standalone`,
         icon: `./static/icon.png`
       }
