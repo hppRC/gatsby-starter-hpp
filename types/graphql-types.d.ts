@@ -1722,10 +1722,10 @@ export type StringQueryOperatorInput = {
   glob?: Maybe<Scalars['String']>,
 };
 
-export type Unnamed_1_QueryVariables = {};
+export type UseSiteMetadataQueryVariables = {};
 
 
-export type Unnamed_1_Query = { site: Maybe<{ siteMetadata: Maybe<Pick<SiteSiteMetadata, 'siteTitle' | 'siteTitleAlt' | 'siteHeadline' | 'siteUrl' | 'siteDescription' | 'siteLanguage' | 'siteImage' | 'author'>> }> };
+export type UseSiteMetadataQuery = { site: Maybe<{ siteMetadata: Maybe<Pick<SiteSiteMetadata, 'siteTitle' | 'siteTitleAlt' | 'siteHeadline' | 'siteUrl' | 'siteDescription' | 'siteLanguage' | 'siteImage' | 'author'>> }> };
 
 export type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 

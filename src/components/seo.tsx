@@ -34,6 +34,7 @@ export const SEO: React.FC<Props> = ({
     url: `${siteUrl}${pathname || ``}`,
     image: `${siteUrl}${image || defaultImage}`
   };
+  console.log(seo);
   return (
     <Helmet
       title={title}
