@@ -17,12 +17,7 @@ module.exports = {
   },
   env: {
     browser: true,
-    jest: true,
     node: true
-  },
-  globals: {
-    cy: true,
-    Cypress: true
   },
   rules: {
     '@typescript-eslint/no-unused-vars': [

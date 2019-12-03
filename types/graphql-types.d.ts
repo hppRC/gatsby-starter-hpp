@@ -950,6 +950,7 @@ export type QuerySiteArgs = {
   parent?: Maybe<NodeFilterInput>,
   children?: Maybe<NodeFilterListInput>,
   internal?: Maybe<InternalFilterInput>,
+  siteMetadata?: Maybe<SiteSiteMetadataFilterInput>,
   port?: Maybe<IntQueryOperatorInput>,
   host?: Maybe<StringQueryOperatorInput>,
   polyfill?: Maybe<BooleanQueryOperatorInput>,
@@ -1019,6 +1020,7 @@ export type Site = Node & {
   parent?: Maybe<Node>,
   children: Array<Node>,
   internal: Internal,
+  siteMetadata?: Maybe<SiteSiteMetadata>,
   port?: Maybe<Scalars['Int']>,
   host?: Maybe<Scalars['String']>,
   polyfill?: Maybe<Scalars['Boolean']>,
@@ -1148,6 +1150,15 @@ export type SiteFieldsEnum =
   'internal___mediaType' |
   'internal___owner' |
   'internal___type' |
+  'siteMetadata___siteTitle' |
+  'siteMetadata___siteTitleAlt' |
+  'siteMetadata___siteHeadline' |
+  'siteMetadata___siteUrl' |
+  'siteMetadata___siteDescription' |
+  'siteMetadata___siteLanguage' |
+  'siteMetadata___siteImage' |
+  'siteMetadata___author' |
+  'siteMetadata___basePath' |
   'port' |
   'host' |
   'polyfill' |
@@ -1159,6 +1170,7 @@ export type SiteFilterInput = {
   parent?: Maybe<NodeFilterInput>,
   children?: Maybe<NodeFilterListInput>,
   internal?: Maybe<InternalFilterInput>,
+  siteMetadata?: Maybe<SiteSiteMetadataFilterInput>,
   port?: Maybe<IntQueryOperatorInput>,
   host?: Maybe<StringQueryOperatorInput>,
   polyfill?: Maybe<BooleanQueryOperatorInput>,
@@ -1674,6 +1686,30 @@ export type SitePluginPluginOptionsFilterInput = {
 export type SitePluginSortInput = {
   fields?: Maybe<Array<Maybe<SitePluginFieldsEnum>>>,
   order?: Maybe<Array<Maybe<SortOrderEnum>>>,
+};
+
+export type SiteSiteMetadata = {
+  siteTitle?: Maybe<Scalars['String']>,
+  siteTitleAlt?: Maybe<Scalars['String']>,
+  siteHeadline?: Maybe<Scalars['String']>,
+  siteUrl?: Maybe<Scalars['String']>,
+  siteDescription?: Maybe<Scalars['String']>,
+  siteLanguage?: Maybe<Scalars['String']>,
+  siteImage?: Maybe<Scalars['String']>,
+  author?: Maybe<Scalars['String']>,
+  basePath?: Maybe<Scalars['String']>,
+};
+
+export type SiteSiteMetadataFilterInput = {
+  siteTitle?: Maybe<StringQueryOperatorInput>,
+  siteTitleAlt?: Maybe<StringQueryOperatorInput>,
+  siteHeadline?: Maybe<StringQueryOperatorInput>,
+  siteUrl?: Maybe<StringQueryOperatorInput>,
+  siteDescription?: Maybe<StringQueryOperatorInput>,
+  siteLanguage?: Maybe<StringQueryOperatorInput>,
+  siteImage?: Maybe<StringQueryOperatorInput>,
+  author?: Maybe<StringQueryOperatorInput>,
+  basePath?: Maybe<StringQueryOperatorInput>,
 };
 
 export type SiteSortInput = {

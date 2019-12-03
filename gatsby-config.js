@@ -1,5 +1,15 @@
 module.exports = {
-  siteMetadata: {},
+  siteMetadata: {
+    siteTitle: `gatsby-starter-hpp`,
+    siteTitleAlt: `Gatsby Starter hpp - @hppRC/gatsby-starter-hpp`,
+    siteHeadline: `Gatsby Starter hpp - Gatsby Starter from @hppRC`,
+    siteUrl: `https://gatsby-starter-hpp.netlify.com`,
+    siteDescription: `simple gatsby starter with mdx, typescript, pwa`,
+    siteLanguage: `en`,
+    siteImage: ``,
+    author: `@hppRC`,
+    basePath: '/'
+  },
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-emotion`,
