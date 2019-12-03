@@ -1,0 +1,29 @@
+{
+  "name": "gatsby-starter-hpp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:hppRC/gatsby-starter-hpp.git",
+  "author": "hppRC <hpp.ricecake@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx,tsx}",
+    "start": "yarn develop",
+    "serve": "gatsby serve",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.4",
+    "@types/react": "^16.9.14",
+    "core-js": "3",
+    "gatsby": "^2.18.6",
+    "gatsby-plugin-graphql-codegen": "^2.0.1",
+    "gatsby-plugin-typescript": "^2.1.20",
+    "graphql": "^14.5.8",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "typescript": "^3.7.2"
+  },
+  "devDependencies": {}
+}
