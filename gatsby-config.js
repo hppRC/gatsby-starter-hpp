@@ -6,8 +6,8 @@ module.exports = {
     siteUrl: `https://gatsby-starter-hpp.netlify.com`,
     siteDescription: `simple gatsby starter with mdx, typescript, pwa`,
     siteLanguage: `en`,
-    siteImage: ``,
-    author: `@osaremochi`,
+    siteImage: `/icon.png`,
+    author: `@osaremochi`, //twitter account id
     basePath: '/'
   },
   plugins: [

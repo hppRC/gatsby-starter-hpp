@@ -92,8 +92,6 @@ module.exports = {
       'error',
       {
         trailingComma: 'es5',
-        semi: false,
-        singleQuote: false,
         printWidth: 120
       }
     ],
