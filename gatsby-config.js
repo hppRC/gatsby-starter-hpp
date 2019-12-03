@@ -7,7 +7,7 @@ module.exports = {
     siteDescription: `simple gatsby starter with mdx, typescript, pwa`,
     siteLanguage: `en`,
     siteImage: ``,
-    author: `@hppRC`,
+    author: `@osaremochi`,
     basePath: '/'
   },
   plugins: [
