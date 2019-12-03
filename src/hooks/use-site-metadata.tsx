@@ -8,7 +8,7 @@ type Props = {
   };
 };
 
-const useSiteMetadata = () => {
+export const useSiteMetadata = () => {
   const data = useStaticQuery<Props>(graphql`
     query {
       site {
