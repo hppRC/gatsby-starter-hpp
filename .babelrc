@@ -1,3 +1,5 @@
+// enable optional chaing in typescript
+// please not forget to switch your typescript version to 3.7.2 in your own editor.
 {
   "presets": [
     [
