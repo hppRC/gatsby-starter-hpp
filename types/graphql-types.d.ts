@@ -1730,6 +1730,11 @@ export type StringQueryOperatorInput = {
   glob?: Maybe<Scalars['String']>,
 };
 
+export type Unnamed_1_QueryVariables = {};
+
+
+export type Unnamed_1_Query = { site: Maybe<{ siteMetadata: Maybe<Pick<SiteSiteMetadata, 'siteTitle' | 'siteTitleAlt' | 'siteHeadline' | 'siteUrl' | 'siteDescription' | 'siteLanguage' | 'siteImage' | 'author'>> }> };
+
 export type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
 export type GatsbyImageSharpFixed_TracedSvgFragment = Pick<ImageSharpFixed, 'tracedSVG' | 'width' | 'height' | 'src' | 'srcSet'>;
