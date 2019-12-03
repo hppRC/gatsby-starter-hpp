@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `gatsby-starter-hpp`,
+    siteTitle: `Gatsby Starter hpp`,
     siteTitleAlt: `Gatsby Starter hpp - @hppRC/gatsby-starter-hpp`,
     siteHeadline: `Gatsby Starter hpp - Gatsby Starter from @hppRC`,
     siteUrl: `https://gatsby-starter-hpp.netlify.com`,

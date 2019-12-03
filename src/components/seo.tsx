@@ -9,12 +9,12 @@ type Props = {
   image?: string;
 };
 
-export const SEO: React.FC<Props> = ({
+export const SEO = ({
   title = ``,
   description = '',
   pathname = '',
   image = ''
-}) => {
+}: Props) => {
   const site = useSiteMetadata();
 
   const {
