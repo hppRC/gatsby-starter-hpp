@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-export const Footer = () => <footer>footer</footer>;
+const Footer: React.FCX = ({ className }) => (
+  <footer className={className}>footer</footer>
+);
 
-export const StyledFooter = styled(Footer)``;
+const StyledHeader = styled(Footer)``;
 
-export default StyledFooter;
+export default StyledHeader;

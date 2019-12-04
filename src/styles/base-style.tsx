@@ -6,16 +6,14 @@ export const baseStyle = css`
   height: auto;
   min-height: 100vh;
 
-  list-style-position: inside;
-
   margin: 0 auto;
-  padding: 10% 10%;
+  padding: 6rem 10%;
 
   @media screen and (max-width: 768px) {
-    padding: 6rem 8%;
+    padding: 6rem 7.5%;
   }
   @media screen and (max-width: 480px) {
-    padding: 8rem 6.5%;
+    padding: 6rem 5%;
   }
 `;
 

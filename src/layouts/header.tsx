@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-export const Header = () => <header>header</header>;
+const Header: React.FCX = ({ className }) => (
+  <header className={className}>header</header>
+);
 
-export const StyledHeader = styled(Header)``;
+const StyledHeader = styled(Header)``;
 
 export default StyledHeader;
