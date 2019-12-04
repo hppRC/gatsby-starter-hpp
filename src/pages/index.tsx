@@ -4,11 +4,7 @@ import { SEO } from '../components';
 import styled from '@emotion/styled';
 import baseStyle from '../styles/base-style';
 
-type Props = {
-  className?: string;
-};
-
-const Index: React.FC<Props> = ({ className }) => (
+const Index: React.FCX = ({ className }) => (
   <div className={className}>
     <h1>Hello!</h1>
   </div>
