@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://gatsby-starter-hpp.netlify.com`,
     siteDescription: `simple gatsby starter with mdx, typescript, pwa`,
     siteLanguage: `en`,
-    siteImage: `/icon.jpg`, // real path -> https://gatsby-starter-hpp.netlify.com/icon.jpg
+    siteImage: `/banner.png`, // real path -> https://gatsby-starter-hpp.netlify.com/icon.jpg
     author: `@osaremochi`, // twitter account id
     basePath: `/`
   },
@@ -67,7 +67,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#090909`,
         display: `standalone`,
-        icon: `./static/icon.jpg`
+        icon: `./static/icon.png`
       }
     },
     `gatsby-plugin-offline`
