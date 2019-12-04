@@ -3,20 +3,21 @@ import { Layout } from '../layouts';
 import { SEO } from '../components';
 import styled from '@emotion/styled';
 import baseStyle from '../styles/base-style';
+import AboutMDX from "../mdx/about.mdx"
 
-const Index: React.FCX = ({ className }) => (
+const About: React.FCX = ({ className }) => (
   <div className={className}>
-    <h1>Gatsby Starter hpp</h1>
+    <AboutMDX />
   </div>
 );
 
-const StyledIndex = styled(Index)`
+const StyledAbout = styled(About)`
   ${baseStyle};
 `;
 
 export default () => (
   <Layout>
-    <SEO title='Top' description='top page' pathname='/' />
-    <StyledIndex />
+    <SEO title='About' description='about page' pathname='/about' />
+    <StyledAbout />
   </Layout>
 );
