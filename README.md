@@ -4,6 +4,25 @@
 
 simplest gatsby skelton.
 
+## Recomendation
+
+- node.js  
+    `version: 13.2.0`
+- yarn  
+    `version: 19.2.0`
+
+## Get Started
+
+1. install node modules
+```
+$ yarn
+```
+
+2. start development server
+```
+$ yarn start
+```
+
 thanks to:  
 [https://qiita.com/Takepepe](https://qiita.com/Takepepe/items/144209f860fbe4d5e9bb)  
 [https://www.lekoarts.de/](https://www.lekoarts.de/)  
