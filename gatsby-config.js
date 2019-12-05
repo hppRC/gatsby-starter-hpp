@@ -38,6 +38,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
