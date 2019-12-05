@@ -1,14 +1,18 @@
+const config = {
+  siteTitle: `Gatsby Starter hpp`,
+  siteTitleAlt: `Gatsby Starter hpp - @hppRC/gatsby-starter-hpp`,
+  siteHeadline: `Gatsby Starter hpp - Gatsby Starter from @hppRC`,
+  siteUrl: `https://gatsby-starter-hpp.netlify.com`,
+  siteDescription: `simple gatsby starter with mdx, typescript, pwa`,
+  siteLanguage: `en`,
+  siteImage: `/banner.png`, // real path -> https://gatsby-starter-hpp.netlify.com/icon.jpg
+  author: `@osaremochi`, // twitter account id
+  basePath: `/`
+};
+
 module.exports = {
   siteMetadata: {
-    siteTitle: `Gatsby Starter hpp`,
-    siteTitleAlt: `Gatsby Starter hpp - @hppRC/gatsby-starter-hpp`,
-    siteHeadline: `Gatsby Starter hpp - Gatsby Starter from @hppRC`,
-    siteUrl: `https://gatsby-starter-hpp.netlify.com`,
-    siteDescription: `simple gatsby starter with mdx, typescript, pwa`,
-    siteLanguage: `en`,
-    siteImage: `/banner.png`, // real path -> https://gatsby-starter-hpp.netlify.com/icon.jpg
-    author: `@osaremochi`, // twitter account id
-    basePath: `/`
+    ...config
   },
   plugins: [
     `gatsby-plugin-typescript`,
@@ -38,15 +42,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: `https://gatsby-starter-hpp.netlify.com`
+        siteUrl: config.siteUrl
       }
     },
     `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: `https://gatsby-starter-hpp.netlify.com`,
-        sitemap: `https://gatsby-starter-hpp.netlify.com/sitemap.xml`,
+        host: config.siteUrl,
+        sitemap: `${config.siteUrl}/sitemap.xml`,
         policy: [{ userAgent: `*`, allow: `/` }]
       }
     },
@@ -60,9 +64,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter hpp`,
+        name: config.siteTitle,
         short_name: `hpp`,
-        description: `simple gatsby starter with mdx, typescript, pwa`,
+        description: config.siteDescription,
         Scope: `/`,
         start_url: `/?utm_source=homescreen`,
         background_color: `#ffffff`,
