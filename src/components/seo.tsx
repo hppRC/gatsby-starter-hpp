@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import { useSiteMetadata } from '../hooks';
+import { useSiteBanner, useSiteMetadata } from '../hooks';
 
 type Props = {
   title?: string;
@@ -17,6 +17,7 @@ export const SEO = ({
   image = ''
 }: Props) => {
   const site = useSiteMetadata();
+  const banner = useSiteBanner();
 
   const {
     siteTitle,
@@ -24,7 +25,6 @@ export const SEO = ({
     siteUrl,
     siteDescription: defaultDescription,
     siteLanguage,
-    siteImage: defaultImage,
     author
   } = site;
 
@@ -32,7 +32,7 @@ export const SEO = ({
     title: title || defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
-    image: `${siteUrl}${image || defaultImage}`
+    image: `${siteUrl}${image || banner.src}`
   };
 
   return (

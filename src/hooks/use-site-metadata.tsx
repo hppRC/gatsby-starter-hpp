@@ -8,6 +8,9 @@ type Props = {
   };
 };
 
+/**
+ * ex. const {siteTitle, siteUrl} = useSiteMetadata();
+ */
 export const useSiteMetadata = () => {
   const data = useStaticQuery<Props>(graphql`
     query {
@@ -19,7 +22,6 @@ export const useSiteMetadata = () => {
           siteUrl
           siteDescription
           siteLanguage
-          siteImage
           author
         }
       }
