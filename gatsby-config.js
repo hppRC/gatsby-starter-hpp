@@ -5,7 +5,6 @@ const config = {
   siteUrl: `https://gatsby-starter-hpp.netlify.com`,
   siteDescription: `simple gatsby starter with mdx, typescript, pwa`,
   siteLanguage: `en`,
-  siteImage: `/banner.png`, // real path -> https://gatsby-starter-hpp.netlify.com/icon.jpg
   author: `@osaremochi`, // twitter account id
   basePath: `/`
 };
@@ -20,6 +19,13 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`
+      }
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -61,6 +67,13 @@ module.exports = {
         openAnalyzer: false
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: `UA-149661454-1`
+      }
+    },
     // gatsby-plugin-manifest should be described before gatsby-plugin-offline
     {
       resolve: `gatsby-plugin-manifest`,
@@ -71,9 +84,9 @@ module.exports = {
         Scope: `/`,
         start_url: `/?utm_source=homescreen`,
         background_color: `#ffffff`,
-        theme_color: `#090909`,
+        theme_color: `#ffffff`,
         display: `standalone`,
-        icon: `./static/icon.png`
+        icon: `./src/images/icon.png`
       }
     },
     `gatsby-plugin-offline`
