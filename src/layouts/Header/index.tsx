@@ -3,6 +3,8 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
+import { StyledModeButton as ModeButton } from './mode-button';
+
 const Header: React.FCX = ({ className }) => (
   <header className={className}>
     <h1>Gatsby starter hpp</h1>
@@ -13,6 +15,7 @@ const Header: React.FCX = ({ className }) => (
           <Link to='/about'>About</Link>
           <Link to='/contact'>Contact</Link>
           <Link to='/404'>404</Link>
+          <ModeButton />
         </li>
       </ul>
     </nav>
@@ -30,9 +33,12 @@ export const StyledHeader = styled(Header)`
 
   nav {
     padding: 2rem;
-    li {
-      a {
-        padding: 2rem;
+    ul {
+      list-style: none;
+      li {
+        a {
+          padding: 2rem;
+        }
       }
     }
   }
