@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { createContainer } from 'unstated-next';
 
-const useMenuContainer = () => {
+const useSwitchContainer = () => {
   const [open, setOpen] = useState(false);
 
   const toggle = () => {
@@ -11,6 +11,6 @@ const useMenuContainer = () => {
   return { open, toggle };
 };
 
-export const MenuContainer = createContainer(useMenuContainer);
+export const SwitchContainer = createContainer(useSwitchContainer);
 
-export default MenuContainer;
+export default SwitchContainer;
