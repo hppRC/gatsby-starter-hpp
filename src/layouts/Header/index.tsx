@@ -11,6 +11,7 @@ const Header: React.FCX = ({ className }) => (
         <li>
           <Link to='/'>Top</Link>
           <Link to='/about'>About</Link>
+          <Link to='/contact'>Contact</Link>
           <Link to='/404'>404</Link>
         </li>
       </ul>
