@@ -49,6 +49,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "typescript": "^3.7.2",
+    "unstated-next": "^1.1.0",
     "webpack": "^4.41.2"
   },
   "devDependencies": {}
