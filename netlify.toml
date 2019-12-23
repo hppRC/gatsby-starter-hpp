@@ -3,7 +3,7 @@
   command = "yarn build"
 
 [build.environment]
-  YARN_VERSION = "1.19.2"
-  NODE_VERSION = "13.2.0"
+  YARN_VERSION = "1.21.1"
+  NODE_VERSION = "13.5.0"
   YARN_FLAGS = "--no-ignore-optional"
   NODE_OPTIONS = "--max_old_space_size=4096"
