@@ -1,8 +1,7 @@
 import React from 'react';
+import { SwitchContainer } from 'src/store';
 
 import styled from '@emotion/styled';
-
-import { SwitchContainer } from '../../store';
 
 const ModeButton: React.FCX = ({ className }) => {
   const { open, toggle } = SwitchContainer.useContainer();

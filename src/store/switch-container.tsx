@@ -8,7 +8,7 @@ const useSwitchContainer = () => {
     setOpen(open => !open);
   };
 
-  return { open, toggle };
+  return { open, setOpen, toggle };
 };
 
 export const SwitchContainer = createContainer(useSwitchContainer);

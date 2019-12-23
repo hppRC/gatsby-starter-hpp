@@ -1,6 +1,6 @@
 import React from 'react';
+import { GlobalCSS, ResetCSS } from 'src/components';
 
-import { GlobalCSS, ResetCSS } from '../components';
 import { StyledFooter as Footer } from './Footer';
 import { StyledHeader as Header } from './Header';
 

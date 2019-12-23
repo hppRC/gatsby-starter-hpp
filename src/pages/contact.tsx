@@ -1,9 +1,8 @@
 import React from 'react';
+import { SEO, StyledForm as Form } from 'src/components';
+import baseStyle from 'src/styles/base-style';
 
 import styled from '@emotion/styled';
-
-import { SEO, StyledForm as Form } from '../components';
-import baseStyle from '../styles/base-style';
 
 const Contact: React.FCX = ({ className }) => (
   <main className={className}>

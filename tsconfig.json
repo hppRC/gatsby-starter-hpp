@@ -18,8 +18,8 @@
     "isolatedModules": true,
     "strictNullChecks": true,
     "noImplicitReturns": true,
-    "baseUrl": ".",
-    "paths": { "*": ["types/*"] },
+    "baseUrl": "./",
+    "paths": { "*": ["types/*"], "src/*": ["src/*"] },
     "typeRoots": ["types", "node_modules/@types"]
   },
   "exclude": ["node_modules", "public", ".cache"]

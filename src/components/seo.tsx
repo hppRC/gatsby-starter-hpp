@@ -1,7 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-
-import { useSiteBanner, useSiteMetadata } from '../hooks';
+import { useSiteBanner, useSiteMetadata } from 'src/hooks';
 
 type Props = {
   title?: string;
