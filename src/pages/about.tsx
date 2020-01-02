@@ -1,7 +1,7 @@
 import React from 'react';
 import { SEO } from 'src/components';
 import AboutMDX from 'src/internal/about.mdx';
-import baseStyle from 'src/styles/base-style';
+import { baseStyle } from 'src/styles';
 
 import styled from '@emotion/styled';
 

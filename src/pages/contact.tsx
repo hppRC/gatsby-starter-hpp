@@ -1,6 +1,6 @@
 import React from 'react';
 import { SEO, StyledForm as Form } from 'src/components';
-import baseStyle from 'src/styles/base-style';
+import { baseStyle } from 'src/styles';
 
 import styled from '@emotion/styled';
 
