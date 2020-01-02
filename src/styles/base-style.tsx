@@ -1,23 +1,25 @@
 import { css } from '@emotion/core';
 
 export const baseStyle = css`
+  flex: 1;
+
   width: 100%;
   max-width: 1400px;
-  height: auto;
-  /* becaouse of footer height is 10vh */
-  min-height: 90vh;
 
   margin: 0 auto;
-  padding: 5rem 5% 0 5%;
+  padding: 10vh 2vw 5rem 2vw;
 
   h1 {
     font-size: 4rem;
     padding-bottom: 3rem;
   }
-
+  @media screen and (max-width: 1100px) {
+  }
   @media screen and (max-width: 768px) {
   }
   @media screen and (max-width: 480px) {
+  }
+  @media screen and (max-height: 430px) {
   }
 `;
 
