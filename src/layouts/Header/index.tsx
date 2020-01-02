@@ -12,9 +12,17 @@ const Header: React.FCX = ({ className }) => (
       <ul>
         <li>
           <Link to='/'>Top</Link>
+        </li>
+        <li>
           <Link to='/about'>About</Link>
+        </li>
+        <li>
           <Link to='/contact'>Contact</Link>
+        </li>
+        <li>
           <Link to='/404'>404</Link>
+        </li>
+        <li>
           <ModeButton />
         </li>
       </ul>
@@ -34,6 +42,8 @@ export const StyledHeader = styled(Header)`
   nav {
     padding: 2rem;
     ul {
+      display: flex;
+      justify-content: center;
       list-style: none;
       li {
         a {
