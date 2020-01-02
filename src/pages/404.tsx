@@ -14,9 +14,9 @@ const StyledNotFound = styled(NotFound)`
   ${baseStyle};
 `;
 
-export default () => (
+export default (props: any) => (
   <>
-    <SEO title='404 NotFound' />
+    <SEO title='Not Found' pathname={props.path} />
     <StyledNotFound />
   </>
 );

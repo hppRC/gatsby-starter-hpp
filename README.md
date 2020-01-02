@@ -7,18 +7,20 @@ simplest gatsby skelton.
 ## Recomendation
 
 - node.js  
-    `version: 13.2.0`
+   `version: 13.5.0`
 - yarn  
-    `version: 19.2.0`
+   `version: 21.1.0`
 
 ## Get Started
 
 1. install node modules
+
 ```
 $ yarn
 ```
 
 2. start development server
+
 ```
 $ yarn start
 ```
@@ -26,4 +28,4 @@ $ yarn start
 thanks to:  
 [https://qiita.com/Takepepe](https://qiita.com/Takepepe/items/144209f860fbe4d5e9bb)  
 [https://www.lekoarts.de/](https://www.lekoarts.de/)  
-[LekoArts/gatsby-themes](https://github.com/LekoArts/gatsby-themes)  
+[LekoArts/gatsby-themes](https://github.com/LekoArts/gatsby-themes)

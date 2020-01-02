@@ -15,9 +15,9 @@ const StyledContact = styled(Contact)`
   ${baseStyle};
 `;
 
-export default () => (
+export default (props: any) => (
   <>
-    <SEO title='Contact' pathname='/contact' />
+    <SEO title='Contact' pathname={props.path} />
     <StyledContact />
   </>
 );
