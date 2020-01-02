@@ -13,6 +13,8 @@ type Props = {
  * use site's default banner's fluid object
  */
 export const useSiteBanner = () => {
+  //relativePath: path from `image`
+  //it is configured in gatsby-config.js of `gatsby-source-filesystem`
   const data = useStaticQuery<Props>(graphql`
     query {
       file(relativePath: { eq: "banner.png" }) {
