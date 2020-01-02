@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
-
-import Layout from '../layouts';
+import Layout from 'src/layouts';
 
 export const WrapPageElement = ({ element }: { element: ReactNode }) => {
   return <Layout>{element}</Layout>;

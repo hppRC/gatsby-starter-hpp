@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
-
-import { SwitchContainer } from '../store';
+import { SwitchContainer } from 'src/store';
 
 export const WrapRootElement = ({ element }: { element: ReactNode }) => (
   <SwitchContainer.Provider>{element}</SwitchContainer.Provider>
