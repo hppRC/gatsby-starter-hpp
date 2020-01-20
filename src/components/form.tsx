@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 
 //this form works only Netlify
 
-const Form: React.FCX = ({ className }) => (
+const Component: React.FCX = ({ className }) => (
   <form
     className={className}
     name='contact'
@@ -50,7 +50,7 @@ const Form: React.FCX = ({ className }) => (
   </form>
 );
 
-export const StyledForm = styled(Form)`
+export const StyledComponent = styled(Component)`
   position: relative;
 
   abbr {
@@ -96,4 +96,4 @@ export const StyledForm = styled(Form)`
   }
 `;
 
-export default StyledForm;
+export default StyledComponent;
