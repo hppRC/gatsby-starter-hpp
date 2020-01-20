@@ -9,6 +9,5 @@ export const createPages: GatsbyNode['createPages'] = async ({
   graphql,
   actions: { createPage }
 }) => {
-  const result = await graphql(query);
-  console.log(result);
+  await graphql(query);
 };

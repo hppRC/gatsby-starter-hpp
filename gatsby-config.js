@@ -10,9 +10,7 @@ const config = {
 };
 
 module.exports = {
-  siteMetadata: {
-    ...config
-  },
+  siteMetadata: config,
   plugins: [
     `gatsby-plugin-root-import`,
     `gatsby-plugin-typescript`,
