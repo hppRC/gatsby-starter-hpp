@@ -1,10 +1,9 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
-    //jsx: if you do something after transcompiling (Babel etc.), you should set "preserve"
-    "jsx": "preserve",
-    "lib": ["dom", "es2015", "es2017"],
+    "module": "umd",
+    "jsx": "react",
+    "lib": ["es2019"],
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -18,9 +17,15 @@
     "isolatedModules": true,
     "strictNullChecks": true,
     "noImplicitReturns": true,
-    "baseUrl": "./",
-    "paths": { "*": ["types/*"], "src/*": ["src/*"] },
+    "assumeChangesOnlyAffectDirectDependencies": true,
+    "baseUrl": ".",
+    "paths": { "*": ["types/*"], "src/*": ["src/*"], "types/*": ["types/*"] },
     "typeRoots": ["types", "node_modules/@types"]
+  },
+  "watchOptions": {
+    "watchFile": "useFsEvents",
+    "watchDirectory": "useFsEvents",
+    "fallbackPolling": "dynamicPriority"
   },
   "exclude": ["node_modules", "public", ".cache"]
 }

@@ -16,9 +16,11 @@ const StyledAbout = styled(About)`
   ${baseStyle};
 `;
 
-export default (props: any) => (
-  <>
-    <SEO title='About' pathname={props.path} />
-    <StyledAbout />
-  </>
-);
+export default props => {
+  return (
+    <>
+      <SEO title='About' pathname={props.path} />
+      <StyledAbout />
+    </>
+  );
+};
