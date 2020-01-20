@@ -24,8 +24,3 @@ $ yarn
 ```
 $ yarn start
 ```
-
-thanks to:  
-[https://qiita.com/Takepepe](https://qiita.com/Takepepe/items/144209f860fbe4d5e9bb)  
-[https://www.lekoarts.de/](https://www.lekoarts.de/)  
-[LekoArts/gatsby-themes](https://github.com/LekoArts/gatsby-themes)
