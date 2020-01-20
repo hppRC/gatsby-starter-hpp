@@ -9,12 +9,12 @@ type Props = {
   image?: string;
 };
 
-export const SEO = ({
+export const SEO: React.FCX<Props> = ({
   title = '',
   description = '',
   pathname = '',
   image = ''
-}: Props) => {
+}) => {
   const site = useSiteMetadata();
   const banner = useSiteBanner();
 

@@ -1,6 +1,6 @@
 import { css } from '@emotion/core';
 
-export const baseStyle = css`
+export default css`
   flex: 1;
 
   width: 100%;
@@ -9,10 +9,11 @@ export const baseStyle = css`
   margin: 0 auto;
   padding: 10vh 2vw 5rem 2vw;
 
-  h1 {
+  > h1 {
     font-size: 4rem;
     padding-bottom: 3rem;
   }
+
   @media screen and (max-width: 1100px) {
   }
   @media screen and (max-width: 768px) {
@@ -22,5 +23,3 @@ export const baseStyle = css`
   @media screen and (max-height: 430px) {
   }
 `;
-
-export default baseStyle;
