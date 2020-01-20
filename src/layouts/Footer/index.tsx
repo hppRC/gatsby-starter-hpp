@@ -2,13 +2,13 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
-const Footer: React.FCX = ({ className }) => (
+const Component: React.FCX = ({ className }) => (
   <footer className={className}>
     Copyright © 2019 hppRC All Rights Reserved.
   </footer>
 );
 
-export const StyledFooter = styled(Footer)`
+const StyledComponent = styled(Component)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,4 +16,4 @@ export const StyledFooter = styled(Footer)`
   height: 10vh;
 `;
 
-export default StyledFooter;
+export default StyledComponent;

@@ -3,9 +3,9 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
-import { StyledModeButton as ModeButton } from './mode-button';
+import ModeButton from './mode-button';
 
-const Header: React.FCX = ({ className }) => (
+const Component: React.FCX = ({ className }) => (
   <header className={className}>
     <h1>Gatsby starter hpp</h1>
     <nav>
@@ -30,7 +30,7 @@ const Header: React.FCX = ({ className }) => (
   </header>
 );
 
-export const StyledHeader = styled(Header)`
+const StyledComponent = styled(Component)`
   position: fixed;
   top: 0;
   left: 0;
@@ -55,4 +55,4 @@ export const StyledHeader = styled(Header)`
   z-index: 1000;
 `;
 
-export default StyledHeader;
+export default StyledComponent;

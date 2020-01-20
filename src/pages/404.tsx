@@ -14,7 +14,7 @@ const StyledNotFound = styled(NotFound)`
   ${baseStyle};
 `;
 
-export default props => {
+export default (props: any) => {
   return (
     <>
       <SEO title='Not Found' pathname={props.path} />

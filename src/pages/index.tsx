@@ -16,7 +16,7 @@ const StyledIndex = styled(Index)`
   ${baseStyle};
 `;
 
-export default props => {
+export default (props: any) => {
   return (
     <>
       <SEO title='Top' pathname={props.path} />
