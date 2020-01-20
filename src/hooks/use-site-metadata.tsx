@@ -3,7 +3,13 @@ import { graphql, useStaticQuery } from 'gatsby';
 type Props = {
   site: {
     siteMetadata: {
-      [key: string]: string;
+      siteTitle: string;
+      siteTitleAlt: string;
+      siteHeadline: string;
+      siteUrl: string;
+      siteDescription: string;
+      siteLanguage: string;
+      author: string;
     };
   };
 };
@@ -30,5 +36,3 @@ export const useSiteMetadata = () => {
 
   return data.site.siteMetadata;
 };
-
-export default useSiteMetadata;

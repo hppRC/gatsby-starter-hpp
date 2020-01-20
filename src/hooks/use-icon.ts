@@ -10,14 +10,14 @@ type Props = {
 };
 
 /**
- * use site's default banner's fluid object
+ * use site's default icon's fluid object
  */
-export const useSiteBanner = () => {
+export const useIcon = () => {
   //relativePath: path from `image`
   //it is configured in gatsby-config.js of `gatsby-source-filesystem`
   const data = useStaticQuery<Props>(graphql`
     query {
-      file(relativePath: { eq: "banner.png" }) {
+      file(relativePath: { eq: "icon.png" }) {
         childImageSharp {
           fluid(maxWidth: 1400, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG

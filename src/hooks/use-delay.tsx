@@ -10,5 +10,3 @@ export const useDelay = (waitinigTime: number) => {
   }, []);
   return waiting;
 };
-
-export default useDelay;

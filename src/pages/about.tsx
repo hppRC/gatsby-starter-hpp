@@ -5,22 +5,22 @@ import { baseStyle } from 'src/styles';
 
 import styled from '@emotion/styled';
 
-const About: React.FCX = ({ className }) => (
+const Component: React.FCX = ({ className }) => (
   <main className={className}>
     <h1>About</h1>
     <AboutMDX />
   </main>
 );
 
-const StyledAbout = styled(About)`
+const StyledComponent = styled(Component)`
   ${baseStyle};
 `;
 
 export default (props: any) => {
   return (
     <>
-      <SEO title='About' pathname={props.path} />
-      <StyledAbout />
+      <SEO title='Component' pathname={props.path} />
+      <StyledComponent />
     </>
   );
 };
