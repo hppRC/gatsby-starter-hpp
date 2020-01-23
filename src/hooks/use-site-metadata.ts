@@ -10,6 +10,7 @@ type Props = {
       siteDescription?: string;
       siteLanguage?: string;
       author?: string;
+      twitterUrl?: string;
     };
   };
 };
@@ -29,6 +30,7 @@ export default () => {
           siteDescription
           siteLanguage
           author
+          twitterUrl
         }
       }
     }

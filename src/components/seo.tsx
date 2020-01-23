@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { useSiteBanner, useSiteMetadata } from 'src/hooks';
+import { useIcon, useSiteBanner, useSiteBuildTime, useSiteMetadata } from 'src/hooks';
 
 type Props = {
   title?: string;
@@ -9,14 +9,74 @@ type Props = {
   image?: string;
 };
 
-export const SEO: React.FCX<Props> = ({
+type JsonLdConfigProps = Partial<{
+  '@context': string;
+  '@type': string;
+  inLanguage: string;
+  url: string;
+  headline: string;
+  name: string;
+  alternateName: string;
+  description: string;
+  author: Partial<{
+    '@type': string;
+    name: string;
+    sameas: string;
+    url: string;
+    image: Partial<{
+      '@type': string;
+      url: string;
+      width: number;
+      height: number;
+    }>;
+  }>[];
+  publisher: Partial<{
+    '@type': string;
+    name: string;
+    description: string;
+    logo: Partial<{
+      '@type': string;
+      url: string;
+      width: number;
+      height: number;
+    }>;
+  }>;
+  image:
+    | Partial<{
+        '@type': string;
+        url: string;
+      }>
+    | string;
+  itemListElement: [
+    Partial<{
+      '@type': string;
+      position: number;
+      item: Partial<{
+        '@id': string;
+        name: string;
+        image: string;
+      }>;
+    }>
+  ];
+  datePublished: string;
+  dateModified: string;
+  potentialAction: {};
+  mainEntityOfPage: Partial<{
+    '@type': string;
+    '@id': string;
+  }>;
+}>[];
+
+const SEO: React.FCX<Props> = ({
   title = '',
   description = '',
   pathname = '',
   image = ''
 }) => {
-  const site = useSiteMetadata();
+  const metadata = useSiteMetadata();
+  const icon = useIcon();
   const banner = useSiteBanner();
+  const buildTime = useSiteBuildTime();
 
   const {
     siteTitle,
@@ -24,8 +84,9 @@ export const SEO: React.FCX<Props> = ({
     siteUrl,
     siteDescription: defaultDescription,
     siteLanguage,
-    author
-  } = site;
+    author,
+    twitterUrl
+  } = metadata;
 
   const seo = {
     title: title || defaultTitle,
@@ -34,12 +95,115 @@ export const SEO: React.FCX<Props> = ({
     image: `${siteUrl}${image || banner?.src}`
   };
 
+  const jsonLdAuthor = [
+    {
+      '@type': 'Person',
+      name: author,
+      description: defaultDescription,
+      image: {
+        '@type': 'ImageObject',
+        url: icon?.src,
+        width: 60,
+        height: 60
+      },
+      url: siteUrl,
+      sameAs: [twitterUrl]
+    },
+    {
+      '@type': 'thing',
+      name: author,
+      sameas: siteTitle,
+      url: siteUrl,
+      image: {
+        '@type': 'ImageObject',
+        url: banner?.src,
+        width: 60,
+        height: 60
+      }
+    }
+  ];
+
+  const publisher = {
+    '@type': 'Organization',
+    name: author,
+    description: defaultDescription,
+    logo: {
+      '@type': 'ImageObject',
+      url: icon?.src,
+      width: 60,
+      height: 60
+    }
+  };
+
+  const jsonLdConfigs: JsonLdConfigProps = [
+    {
+      '@context': 'http://schema.org',
+      '@type': 'WebSite',
+      inLanguage: 'ja',
+      url: siteTitle,
+      name: title,
+      alternateName: seo.title,
+      image: seo.image,
+      description: seo.description,
+      author: jsonLdAuthor,
+      publisher,
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: `${seo.url}/search?q={q}`,
+        'query-input': 'required name=q'
+      }
+    }
+  ];
+
+  if (pathname !== '/') {
+    jsonLdConfigs.push({
+      '@context': 'http://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          item: {
+            '@id': seo.url,
+            name: seo.title,
+            image: seo.image
+          }
+        }
+      ]
+    });
+
+    jsonLdConfigs.push({
+      '@context': 'http://schema.org',
+      '@type': 'BlogPosting',
+      url: seo.url,
+      name: title,
+      alternateName: seo.title,
+      headline: title,
+      image: {
+        '@type': 'ImageObject',
+        url: seo.image
+      },
+      description,
+      datePublished: buildTime,
+      dateModified: buildTime,
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': seo.url
+      },
+      author: jsonLdAuthor,
+      publisher
+    });
+  }
+
   return (
     <Helmet
       title={title}
       defaultTitle={defaultTitle}
       titleTemplate={`%s | ${siteTitle}`}
     >
+      <script type='application/ld+json'>
+        {JSON.stringify(jsonLdConfigs)}
+      </script>
       <html lang={siteLanguage} />
 
       <meta name='description' content={seo.description} />

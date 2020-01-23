@@ -6,7 +6,8 @@ const config = {
   siteDescription: `simple gatsby starter with mdx, typescript, pwa`,
   siteLanguage: `en`,
   author: `@osaremochi`, // twitter account id
-  basePath: `/`
+  basePath: `/`,
+  twitterUrl: 'https://twitter.com/osaremochi'
 };
 
 module.exports = {
