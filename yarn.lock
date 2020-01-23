@@ -13001,9 +13001,9 @@ typedarray@^0.0.6:
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
 typescript@^3.8.0-beta:
-  version "3.8.0-dev.20200122"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.0-dev.20200122.tgz#66c2078b2d72de1c3da2cd00cd5ac3e3280db416"
-  integrity sha512-RcI3vLnPgjjYShD0a8FG1DwLaUttr+DHUIYIC9fzbkljiz434aWV5CPlW70sMK98fClLv5NgJrnWnfGQPeYWmA==
+  version "3.8.0-beta"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.0-beta.tgz#acdcaf9f24c7e20b1ff0a6329d1e8d63691e2e13"
+  integrity sha512-mQEmQUJg0CQBhf/GSVnGscKv/jrKsrLxE01AhdjYmBNoXX2Iah3i38ufxXByXacK6Fc5Nr9oMz7MjpjgddiknA==
 
 ua-parser-js@^0.7.18:
   version "0.7.21"
