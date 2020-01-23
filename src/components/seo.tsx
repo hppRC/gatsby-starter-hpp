@@ -150,7 +150,7 @@ const SEO: React.FCX<Props> = ({
       publisher,
       potentialAction: {
         '@type': 'SearchAction',
-        target: `${siteUrl}search?q={q}`,
+        target: `${siteUrl}/search?q={q}`,
         'query-input': 'required name=q'
       }
     }
