@@ -25,6 +25,7 @@ public
 .idea
 .vscode
 .DS_Store
+*.webp
 *.png
 *.jpg
 *.ico
