@@ -95,6 +95,7 @@ const SEO: React.FCX<Props> = ({
     image: `${siteUrl}${image || banner?.src}`
   };
 
+  // JSON+LD configurations
   const jsonLdAuthor = [
     {
       '@type': 'Person',
@@ -201,9 +202,6 @@ const SEO: React.FCX<Props> = ({
       defaultTitle={defaultTitle}
       titleTemplate={`%s | ${siteTitle}`}
     >
-      <script type='application/ld+json'>
-        {JSON.stringify(jsonLdConfigs)}
-      </script>
       <html lang={siteLanguage} />
 
       <meta name='description' content={seo.description} />
@@ -223,6 +221,9 @@ const SEO: React.FCX<Props> = ({
       <meta name='twitter:image' content={seo.image} />
       <meta name='twitter:image:alt' content={seo.description} />
       <meta name='twitter:creator' content={author} />
+      <script type='application/ld+json'>
+        {JSON.stringify(jsonLdConfigs)}
+      </script>
     </Helmet>
   );
 };
