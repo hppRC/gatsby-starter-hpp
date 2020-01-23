@@ -3,13 +3,13 @@ import { graphql, useStaticQuery } from 'gatsby';
 type Props = {
   site: {
     siteMetadata: {
-      siteTitle: string;
-      siteTitleAlt: string;
-      siteHeadline: string;
-      siteUrl: string;
-      siteDescription: string;
-      siteLanguage: string;
-      author: string;
+      siteTitle?: string;
+      siteTitleAlt?: string;
+      siteHeadline?: string;
+      siteUrl?: string;
+      siteDescription?: string;
+      siteLanguage?: string;
+      author?: string;
     };
   };
 };

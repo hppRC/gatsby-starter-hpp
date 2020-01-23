@@ -1,26 +1,35 @@
 import React from 'react';
-import { SEO } from 'src/components';
+import { AnyImage, SEO } from 'src/components';
 import { baseStyle } from 'src/styles';
 
 import styled from '@emotion/styled';
 
-const Index: React.FCX = ({ className }) => {
+const Component: React.FCX = ({ className }) => {
   return (
     <main className={className}>
-      <h1>this is index page!</h1>
+      <h1>this is Component page!</h1>
+      <AnyImage filename='banner.png' />
     </main>
   );
 };
 
-const StyledIndex = styled(Index)`
+const StyledComponent = styled(Component)`
   ${baseStyle};
+  @media screen and (max-width: 1100px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (max-height: 430px) {
+  }
 `;
 
 export default (props: any) => {
   return (
     <>
       <SEO title='Top' pathname={props.path} />
-      <StyledIndex />
+      <StyledComponent />
     </>
   );
 };

@@ -50,49 +50,58 @@ const Component: React.FCX = ({ className }) => (
   </form>
 );
 
-export const StyledComponent = styled(Component)`
+const StyledComponent = styled(Component)`
   position: relative;
 
-  abbr {
-    text-decoration: none;
-  }
-
-  label {
+  > label {
     width: 100%;
     max-width: 300px;
     display: block;
     padding: 1rem 0;
-  }
 
-  input[type='text'],
-  input[type='email'] {
-    width: 100%;
-    padding: 0.3em;
-    border: none;
-    border-bottom: 2px solid #000000;
-    transition: 0.5s;
-    :focus {
-      border-bottom: 2px solid #00000055;
-      outline: none;
+    > abbr {
+      text-decoration: none;
     }
-  }
 
-  textarea {
-    width: 100%;
-    color: #000000;
-    border: 2px solid #00000055;
-    transition: border 0.5s;
-    :focus {
+    > input[type='text'],
+    > input[type='email'] {
+      width: 100%;
+      padding: 0.3em;
+      border: none;
+      border-bottom: 2px solid #000000;
+      transition: 0.5s;
+      :focus {
+        border-bottom: 2px solid #00000055;
+        outline: none;
+      }
+    }
+
+    > textarea {
+      width: 100%;
+      color: #000000;
       border: 2px solid #00000055;
-      outline: none;
+      transition: border 0.5s;
+      :focus {
+        border: 2px solid #00000055;
+        outline: none;
+      }
+    }
+
+    > button {
+      color: #000000;
+      border: 2px solid #00000055;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
     }
   }
 
-  button {
-    color: #000000;
-    border: 2px solid #00000055;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+  @media screen and (max-width: 1100px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (max-height: 430px) {
   }
 `;
 

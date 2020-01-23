@@ -4,22 +4,30 @@ import { baseStyle } from 'src/styles';
 
 import styled from '@emotion/styled';
 
-const Contact: React.FCX = ({ className }) => (
+const Component: React.FCX = ({ className }) => (
   <main className={className}>
     <h1>Contact</h1>
     <NetlifyForm />
   </main>
 );
 
-const StyledContact = styled(Contact)`
+const StyledComponent = styled(Component)`
   ${baseStyle};
+  @media screen and (max-width: 1100px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (max-height: 430px) {
+  }
 `;
 
 export default (props: any) => {
   return (
     <>
       <SEO title='Contact' pathname={props.path} />
-      <StyledContact />
+      <StyledComponent />
     </>
   );
 };

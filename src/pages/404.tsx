@@ -4,21 +4,29 @@ import { baseStyle } from 'src/styles';
 
 import styled from '@emotion/styled';
 
-const NotFound: React.FCX = ({ className }) => (
+const Component: React.FCX = ({ className }) => (
   <main className={className}>
     <h1>Not Found</h1>
   </main>
 );
 
-const StyledNotFound = styled(NotFound)`
+const StyledComponent = styled(Component)`
   ${baseStyle};
+  @media screen and (max-width: 1100px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (max-height: 430px) {
+  }
 `;
 
 export default (props: any) => {
   return (
     <>
       <SEO title='Not Found' pathname={props.path} />
-      <StyledNotFound />
+      <StyledComponent />
     </>
   );
 };

@@ -16,11 +16,11 @@ export default () => {
   //relativePath: path from `image`
   //it is configured in gatsby-config.js of `gatsby-source-filesystem`
   const data = useStaticQuery<Props>(graphql`
-    query {
+    query hooksUseIcon {
       file(relativePath: { eq: "icon.png" }) {
         childImageSharp {
           fluid(maxWidth: 1400, quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            ...GatsbyImageSharpFluid
           }
         }
       }

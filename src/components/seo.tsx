@@ -31,7 +31,7 @@ export const SEO: React.FCX<Props> = ({
     title: title || defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
-    image: `${siteUrl}${image || banner.src}`
+    image: `${siteUrl}${image || banner?.src}`
   };
 
   return (

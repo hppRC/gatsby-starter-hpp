@@ -14,6 +14,14 @@ const StyledComponent = styled(Component)`
   align-items: center;
   width: 100vw;
   height: 10vh;
+  @media screen and (max-width: 1100px) {
+  }
+  @media screen and (max-width: 768px) {
+  }
+  @media screen and (max-width: 480px) {
+  }
+  @media screen and (max-height: 430px) {
+  }
 `;
 
 export default StyledComponent;
