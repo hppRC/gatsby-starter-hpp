@@ -140,7 +140,7 @@ const SEO: React.FCX<Props> = ({
     {
       '@context': 'http://schema.org',
       '@type': 'WebSite',
-      inLanguage: 'ja',
+      inLanguage: siteLanguage,
       url: siteTitle,
       name: title,
       alternateName: seo.title,
