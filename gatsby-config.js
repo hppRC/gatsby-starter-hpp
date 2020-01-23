@@ -7,7 +7,11 @@ const config = {
   siteLanguage: `en`,
   author: `@osaremochi`, // twitter account id
   basePath: `/`,
-  twitterUrl: 'https://twitter.com/osaremochi'
+  social: {
+    twitter: 'https://twitter.com/osaremochi',
+    github: 'https://github.com/',
+    qiita: 'https://qiita.com/hppRC'
+  }
 };
 
 module.exports = {

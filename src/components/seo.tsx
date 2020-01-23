@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { useIcon, useSiteBanner, useSiteBuildTime, useSiteMetadata } from 'src/hooks';
+import { useAnyImage, useSiteBuildTime, useSiteMetadata } from 'src/hooks';
 
 type Props = {
   title?: string;
@@ -74,9 +74,9 @@ const SEO: React.FCX<Props> = ({
   image = ''
 }) => {
   const metadata = useSiteMetadata();
-  const icon = useIcon();
-  const banner = useSiteBanner();
   const buildTime = useSiteBuildTime();
+  const icon = useAnyImage('icon.webp');
+  const banner = useAnyImage('banner.webp');
 
   const {
     siteTitle,
@@ -85,7 +85,7 @@ const SEO: React.FCX<Props> = ({
     siteDescription: defaultDescription,
     siteLanguage,
     author,
-    twitterUrl
+    social: { twitter, github, qiita }
   } = metadata;
 
   const seo = {
@@ -108,7 +108,7 @@ const SEO: React.FCX<Props> = ({
         height: 60
       },
       url: siteUrl,
-      sameAs: [twitterUrl]
+      sameAs: [twitter, github, qiita]
     },
     {
       '@type': 'thing',

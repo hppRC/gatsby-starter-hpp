@@ -1,14 +1,9 @@
 import Img from 'gatsby-image';
 import React from 'react';
-import { useAllImages } from 'src/hooks';
+import { useAnyImage } from 'src/hooks';
 
 export default ({ filename }: { filename: string }) => {
-  const images = useAllImages();
-  const image = images.edges.find(edge => {
-    return edge.node.relativePath.includes(filename);
-  });
-
-  const fluid = image?.node.childImageSharp?.fluid;
+  const fluid = useAnyImage(filename);
 
   return <Img fluid={fluid} />;
 };

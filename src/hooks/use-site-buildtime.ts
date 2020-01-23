@@ -6,7 +6,7 @@ type Props = {
   };
 };
 
-export const useSiteBuildTime = () => {
+export default () => {
   const data = useStaticQuery<Props>(graphql`
     query {
       site {
@@ -17,5 +17,3 @@ export const useSiteBuildTime = () => {
 
   return data.site.buildTime;
 };
-
-export default useSiteBuildTime;

@@ -6,7 +6,6 @@ type Props = {
     edges: {
       node: {
         relativePath: string;
-        name: string;
         childImageSharp: {
           fluid: FluidObject;
         };
@@ -16,9 +15,9 @@ type Props = {
 };
 
 /**
- * use all images in src/images
+ * use any image in src/images
  */
-export default () => {
+export default (filename: string) => {
   //relativePath: path from `image`
   //it is configured in gatsby-config.js of `gatsby-source-filesystem`
   const data = useStaticQuery<Props>(graphql`
@@ -27,7 +26,6 @@ export default () => {
         edges {
           node {
             relativePath
-            name
             childImageSharp {
               fluid(maxWidth: 1400, quality: 90) {
                 ...GatsbyImageSharpFluid
@@ -39,5 +37,9 @@ export default () => {
     }
   `);
 
-  return data.images;
+  const image = data.images.edges.find(edge => {
+    return edge.node.relativePath.includes(filename);
+  });
+
+  return image?.node.childImageSharp?.fluid;
 };
