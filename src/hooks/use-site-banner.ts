@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import { FluidObject } from 'gatsby-image';
 
 type Props = {
-  file: {
+  file?: {
     childImageSharp: {
       fluid: FluidObject;
     };
@@ -27,5 +27,5 @@ export default () => {
     }
   `);
 
-  return data.file.childImageSharp.fluid;
+  return data.file?.childImageSharp.fluid;
 };
