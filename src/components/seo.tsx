@@ -75,8 +75,8 @@ const SEO: React.FCX<Props> = ({
 }) => {
   const metadata = useSiteMetadata();
   const buildTime = useSiteBuildTime();
-  const icon = useAnyImage('icon.webp');
-  const banner = useAnyImage('banner.webp');
+  const icon = useAnyImage('icon.png');
+  const banner = useAnyImage('banner.png');
 
   const {
     siteTitle,

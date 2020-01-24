@@ -8,7 +8,7 @@ const Component: React.FCX = ({ className }) => {
   return (
     <main className={className}>
       <h1>this is Component page!</h1>
-      <AnyImage filename='banner.webp' />
+      <AnyImage filename='banner.png' />
     </main>
   );
 };
