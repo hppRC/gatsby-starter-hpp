@@ -8,8 +8,8 @@ const config = {
   author: `@hpp_ricecake`, // twitter account id
   basePath: `/`,
   social: {
-    twitter: 'https://twitter.com/osaremochi',
-    github: 'https://github.com/',
+    twitter: 'https://twitter.com/hpp_ricecake',
+    github: 'https://github.com/hppRC',
     qiita: 'https://qiita.com/hppRC'
   }
 };
