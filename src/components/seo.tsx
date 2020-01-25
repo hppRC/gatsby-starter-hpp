@@ -85,8 +85,10 @@ const SEO: React.FCX<Props> = ({
     siteDescription: defaultDescription,
     siteLanguage,
     author,
-    social: { twitter, github, qiita }
+    social = {}
   } = metadata;
+
+  const { twitter, github, qiita } = social;
 
   const seo = {
     title: title || defaultTitle,
