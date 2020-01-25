@@ -5,7 +5,7 @@ const config = {
   siteUrl: `https://gatsby-starter-hpp.netlify.com`,
   siteDescription: `simple gatsby starter with mdx, typescript, pwa`,
   siteLanguage: `en`,
-  author: `@osaremochi`, // twitter account id
+  author: `@hpp_ricecake`, // twitter account id
   basePath: `/`,
   social: {
     twitter: 'https://twitter.com/osaremochi',
