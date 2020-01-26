@@ -1,8 +1,9 @@
 import { graphql, useStaticQuery } from 'gatsby';
+import { DeepPartial, DeepReadonly } from 'utility-types';
 
-type Props = {
-  site: {
-    siteMetadata: Partial<{
+type Props = DeepReadonly<{
+  site: DeepPartial<{
+    siteMetadata: {
       siteTitle: string;
       siteTitleAlt: string;
       siteHeadline: string;
@@ -10,14 +11,14 @@ type Props = {
       siteDescription: string;
       siteLanguage: string;
       author: string;
-      social: Partial<{
+      social: {
         twitter: string;
         github: string;
         qiita: string;
-      }>;
-    }>;
-  };
-};
+      };
+    };
+  }>;
+}>;
 
 /**
  * ex. const {siteTitle, siteUrl} = useSiteMetadata();

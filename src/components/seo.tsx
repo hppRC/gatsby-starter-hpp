@@ -1,71 +1,76 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { useAnyImage, useSiteBuildTime, useSiteMetadata } from 'src/hooks';
+import { DeepPartial, DeepReadonly } from 'utility-types';
 
-type Props = {
-  title?: string;
-  description?: string;
-  pathname?: string;
-  image?: string;
-};
-
-type JsonLdConfigProps = Partial<{
-  '@context': string;
-  '@type': string;
-  inLanguage: string;
-  url: string;
-  headline: string;
-  name: string;
-  alternateName: string;
-  description: string;
-  author: Partial<{
-    '@type': string;
-    name: string;
-    sameas: string;
-    url: string;
-    image: Partial<{
-      '@type': string;
-      url: string;
-      width: number;
-      height: number;
-    }>;
-  }>[];
-  publisher: Partial<{
-    '@type': string;
-    name: string;
+type Props = Readonly<
+  Partial<{
+    title: string;
     description: string;
-    logo: Partial<{
+    pathname: string;
+    image: string;
+  }>
+>;
+
+type JsonLdConfigProps = DeepReadonly<
+  DeepPartial<{
+    '@context': string;
+    '@type': string;
+    inLanguage: string;
+    url: string;
+    headline: string;
+    name: string;
+    alternateName: string;
+    description: string;
+    author: {
       '@type': string;
+      name: string;
+      sameas: string;
       url: string;
-      width: number;
-      height: number;
-    }>;
-  }>;
-  image:
-    | Partial<{
+      image: {
         '@type': string;
         url: string;
-      }>
-    | string;
-  itemListElement: [
-    Partial<{
+        width: number;
+        height: number;
+      };
+    }[];
+    publisher: {
       '@type': string;
-      position: number;
-      item: Partial<{
-        '@id': string;
-        name: string;
-        image: string;
-      }>;
-    }>
-  ];
-  datePublished: string;
-  dateModified: string;
-  potentialAction: {};
-  mainEntityOfPage: Partial<{
-    '@type': string;
-    '@id': string;
-  }>;
-}>[];
+      name: string;
+      description: string;
+      logo: {
+        '@type': string;
+        url: string;
+        width: number;
+        height: number;
+      };
+    };
+    image:
+      | {
+          '@type': string;
+          url: string;
+        }
+      | string;
+    itemListElement: [
+      {
+        '@type': string;
+        position: number;
+        item: {
+          '@id': string;
+          name: string;
+          image: string;
+        };
+      }
+    ];
+    datePublished: string;
+    dateModified: string;
+    potentialAction: {};
+    mainEntityOfPage: {
+      '@type': string;
+      '@id': string;
+    };
+  }>
+>[];
 
 const SEO: React.FCX<Props> = ({
   title = '',
@@ -73,7 +78,7 @@ const SEO: React.FCX<Props> = ({
   pathname = '',
   image = ''
 }) => {
-  const metadata = useSiteMetadata();
+  const metadata = useSiteMetadata() || {};
   const buildTime = useSiteBuildTime();
   const icon = useAnyImage('icon.png');
   const banner = useAnyImage('banner.png');
@@ -85,10 +90,10 @@ const SEO: React.FCX<Props> = ({
     siteDescription: defaultDescription,
     siteLanguage,
     author,
-    social = {}
+    social
   } = metadata;
 
-  const { twitter, github, qiita } = social;
+  const { twitter, github, qiita } = social || {};
 
   const seo = {
     title: title || defaultTitle,
@@ -149,12 +154,12 @@ const SEO: React.FCX<Props> = ({
       image: seo.image,
       description: seo.description,
       author: jsonLdAuthor,
-      publisher,
-      potentialAction: {
-        '@type': 'SearchAction',
-        target: `${siteUrl}/search?q={q}`,
-        'query-input': 'required name=q'
-      }
+      publisher
+      // potentialAction: {
+      //   '@type': 'SearchAction',
+      //   target: `${siteUrl}/search?q={q}`,
+      //   'query-input': 'required name=q'
+      // }
     }
   ];
 

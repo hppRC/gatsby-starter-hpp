@@ -1,10 +1,11 @@
 import { graphql, useStaticQuery } from 'gatsby';
+import { DeepReadonly } from 'utility-types';
 
-type Props = {
+type Props = DeepReadonly<{
   site: {
     buildTime: string;
   };
-};
+}>;
 
 export default () => {
   const data = useStaticQuery<Props>(graphql`

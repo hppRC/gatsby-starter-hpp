@@ -1,7 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import { FluidObject } from 'gatsby-image';
+import { DeepReadonly } from 'utility-types';
 
-type Props = {
+type Props = DeepReadonly<{
   images: {
     edges: {
       node: {
@@ -12,7 +13,7 @@ type Props = {
       };
     }[];
   };
-};
+}>;
 
 /**
  * use any image in src/images
