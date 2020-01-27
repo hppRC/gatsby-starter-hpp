@@ -54,10 +54,10 @@ const StyledComponent = styled(Component)`
   position: relative;
 
   > label {
-    width: 100%;
-    max-width: 300px;
     display: block;
+    max-width: 300px;
     padding: 1rem 0;
+    width: 100%;
 
     > abbr {
       text-decoration: none;
@@ -65,11 +65,11 @@ const StyledComponent = styled(Component)`
 
     > input[type='text'],
     > input[type='email'] {
-      width: 100%;
-      padding: 0.3em;
       border: none;
       border-bottom: 2px solid #000000;
+      padding: 0.3em;
       transition: 0.5s;
+      width: 100%;
       :focus {
         border-bottom: 2px solid #00000055;
         outline: none;
@@ -77,10 +77,10 @@ const StyledComponent = styled(Component)`
     }
 
     > textarea {
-      width: 100%;
-      color: #000000;
       border: 2px solid #00000055;
+      color: #000000;
       transition: border 0.5s;
+      width: 100%;
       :focus {
         border: 2px solid #00000055;
         outline: none;
@@ -88,10 +88,10 @@ const StyledComponent = styled(Component)`
     }
 
     > button {
-      color: #000000;
       border: 2px solid #00000055;
-      padding: 0.5rem 1rem;
       border-radius: 5px;
+      color: #000000;
+      padding: 0.5rem 1rem;
     }
   }
 

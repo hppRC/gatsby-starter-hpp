@@ -3,11 +3,11 @@ import { css } from '@emotion/core';
 export default css`
   flex: 1;
 
-  width: 100%;
-  max-width: 1400px;
-
   margin: 0 auto;
+  max-width: 1400px;
   padding: 10vh 2vw 5vw 2vw;
+
+  width: 100%;
 
   > h1 {
     font-size: 4rem;

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Global, css } from '@emotion/core';
+
+import { css, Global } from '@emotion/core';
 
 export const ResetCSS = () => (
   <Global
@@ -16,10 +17,10 @@ export const ResetCSS = () => (
 
       html {
         box-sizing: border-box;
-        -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
-        word-break: break-word;
         -moz-tab-size: 4;
         tab-size: 4;
+        -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS */
+        word-break: break-word;
       }
 
       *,
@@ -36,8 +37,8 @@ export const ResetCSS = () => (
       }
 
       * {
-        padding: 0;
         margin: 0;
+        padding: 0;
       }
 
       /* # =================================================================
@@ -45,8 +46,8 @@ export const ResetCSS = () => (
   # ================================================================= */
 
       hr {
-        overflow: visible; /* Show the overflow in Edge and IE */
         height: 0; /* Add the correct box sizing in Firefox */
+        overflow: visible; /* Show the overflow in Edge and IE */
       }
 
       details,
@@ -229,8 +230,8 @@ export const ResetCSS = () => (
         color: inherit;
         display: table; /* Correct the text wrapping in Edge and IE */
         max-width: 100%; /* Correct the text wrapping in Edge and IE */
-        white-space: normal; /* Correct the text wrapping in Edge and IE */
         max-width: 100%; /* Correct the text wrapping in Edge 18- and IE */
+        white-space: normal; /* Correct the text wrapping in Edge and IE */
       }
 
       ::-webkit-file-upload-button {
@@ -265,8 +266,8 @@ export const ResetCSS = () => (
           display: inherit;
         }
         [hidden~='screen']:not(:active):not(:focus):not(:target) {
-          position: absolute !important;
           clip: rect(0 0 0 0) !important;
+          position: absolute !important;
         }
       }
 

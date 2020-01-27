@@ -13,11 +13,12 @@ const Component: React.FCX<Props> = ({ className, open, toggle }) => (
 );
 
 const StyledComponent = styled(Component)`
-  color: #ffffff;
   background-color: #000000;
   border-radius: 5px;
-  padding: 2rem;
+  color: #ffffff;
   cursor: pointer;
+  padding: 2rem;
+
   @media screen and (max-width: 1100px) {
   }
   @media screen and (max-width: 768px) {

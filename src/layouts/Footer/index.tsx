@@ -9,11 +9,12 @@ const Component: React.FCX = ({ className }) => (
 );
 
 const StyledComponent = styled(Component)`
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100vw;
+  display: flex;
   height: 10vh;
+  justify-content: center;
+  width: 100vw;
+
   @media screen and (max-width: 1100px) {
   }
   @media screen and (max-width: 768px) {

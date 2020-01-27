@@ -11,33 +11,31 @@ export const GlobalCSS = () => (
         font-size: 62.5%;
         @font-face {
           font-family: 'Original Yu Gothic';
-          src: local('Yu Gothic Medium');
           font-weight: 100;
+          src: local('Yu Gothic Medium');
         }
         @font-face {
           font-family: 'Original Yu Gothic';
-          src: local('Yu Gothic Medium');
           font-weight: 200;
+          src: local('Yu Gothic Medium');
         }
         @font-face {
           font-family: 'Original Yu Gothic';
-          src: local('Yu Gothic Medium');
           font-weight: 300;
-        }
-        @font-face {
-          font-family: 'Original Yu Gothic';
           src: local('Yu Gothic Medium');
-          font-weight: 400;
         }
         @font-face {
           font-family: 'Original Yu Gothic';
-          src: local('Yu Gothic Bold');
+          font-weight: 400;
+          src: local('Yu Gothic Medium');
+        }
+        @font-face {
+          font-family: 'Original Yu Gothic';
           font-weight: bold;
+          src: local('Yu Gothic Bold');
         }
 
         body {
-          font-size: 1.6em;
-          overflow-x: hidden;
           /*overscroll-behavior-y: none;*/
           color: #09090f;
 
@@ -45,6 +43,8 @@ export const GlobalCSS = () => (
             'Hiragino Sans', 'Noto Sans CJK JP', 'Original Yu Gothic',
             'Yu Gothic', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
             'Segoe UI Symbol', 'Noto Sans Emoji';
+          font-size: 1.6em;
+          overflow-x: hidden;
 
           @media screen and (max-width: 768px) {
             font-size: 1.4em;

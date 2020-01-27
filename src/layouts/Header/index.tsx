@@ -31,28 +31,28 @@ const Component: React.FCX = ({ className }) => (
 );
 
 const StyledComponent = styled(Component)`
-  position: fixed;
-  top: 0;
-  left: 0;
-
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  left: 0;
 
-  nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  > nav {
     padding: 2rem;
-    ul {
+    > ul {
       display: flex;
       justify-content: center;
       list-style: none;
-      li {
-        a {
+      > li {
+        > a {
           padding: 2rem;
         }
       }
     }
   }
-  z-index: 1000;
   @media screen and (max-width: 1100px) {
   }
   @media screen and (max-width: 768px) {

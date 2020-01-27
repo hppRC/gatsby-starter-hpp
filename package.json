@@ -56,5 +56,9 @@
     "utility-types": "^3.10.0",
     "webpack": "^4.41.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "stylelint": "^13.0.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-order": "^4.0.0"
+  }
 }
