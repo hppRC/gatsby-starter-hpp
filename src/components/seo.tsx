@@ -211,6 +211,11 @@ const SEO: React.FCX<Props> = ({
     >
       <html lang={siteLanguage} />
 
+      <meta
+        name='viewport'
+        content='width=device-width, initial-scale=1.0, viewport-fit=cover, shrink-to-fit=no'
+      />
+
       <meta name='description' content={seo.description} />
       <meta name='image' content={seo.image} />
 
