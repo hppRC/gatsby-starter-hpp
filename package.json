@@ -57,7 +57,7 @@
     "webpack": "^4.41.5"
   },
   "devDependencies": {
-    "stylelint": "13.0.0",
+    "stylelint": "13.3.0",
     "stylelint-config-recommended": "3.0.0",
     "stylelint-order": "4.0.0"
   }
