@@ -13,7 +13,7 @@ const Component: React.FCX = ({ className }) => (
 );
 
 const StyledComponent = styled(Component)`
-  ${baseStyle};
+  ${baseStyle}
   @media screen and (max-width: 1100px) {
   }
   @media screen and (max-width: 768px) {
@@ -24,11 +24,9 @@ const StyledComponent = styled(Component)`
   }
 `;
 
-export default (props: any) => {
-  return (
-    <>
-      <SEO title='about' pathname={props.path} />
-      <StyledComponent />
-    </>
-  );
-};
+export default ({ path }: { path: string }) => (
+  <>
+    <SEO title='about' pathname={path} />
+    <StyledComponent />
+  </>
+);

@@ -31,14 +31,13 @@ const Component: React.FCX = ({ className }) => (
 );
 
 const StyledComponent = styled(Component)`
-  display: flex;
-  justify-content: space-between;
-  left: 0;
-
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
   z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 
   > nav {
     padding: 2rem;

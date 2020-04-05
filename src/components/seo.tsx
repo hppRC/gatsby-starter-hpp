@@ -72,16 +72,11 @@ type JsonLdConfigProps = DeepReadonly<
   }>
 >[];
 
-const SEO: React.FCX<Props> = ({
-  title = '',
-  description = '',
-  pathname = '',
-  image = ''
-}) => {
+const SEO: React.FCX<Props> = ({ title = ``, description = ``, pathname = ``, image = `` }) => {
   const metadata = useSiteMetadata() || {};
   const buildTime = useSiteBuildTime();
-  const icon = useAnyImage('icon.png');
-  const banner = useAnyImage('banner.png');
+  const icon = useAnyImage(`icon.png`);
+  const banner = useAnyImage(`banner.png`);
 
   const {
     siteTitle,
@@ -90,7 +85,7 @@ const SEO: React.FCX<Props> = ({
     siteDescription: defaultDescription,
     siteLanguage,
     author,
-    social
+    social,
   } = metadata;
 
   const { twitter, github, qiita } = social || {};
@@ -99,54 +94,54 @@ const SEO: React.FCX<Props> = ({
     title: title || defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
-    image: `${siteUrl}${image || banner?.src}`
+    image: `${siteUrl}${image || banner?.src}`,
   };
 
   // JSON+LD configurations
   const jsonLdAuthor = [
     {
-      '@type': 'Person',
+      '@type': `Person`,
       name: author,
       description: defaultDescription,
       image: {
-        '@type': 'ImageObject',
+        '@type': `ImageObject`,
         url: icon?.src,
         width: 60,
-        height: 60
+        height: 60,
       },
       url: siteUrl,
-      sameAs: [twitter, github, qiita]
+      sameAs: [twitter, github, qiita],
     },
     {
-      '@type': 'thing',
+      '@type': `thing`,
       name: author,
       sameas: siteTitle,
       url: siteUrl,
       image: {
-        '@type': 'ImageObject',
+        '@type': `ImageObject`,
         url: banner?.src,
         width: 60,
-        height: 60
-      }
-    }
+        height: 60,
+      },
+    },
   ];
 
   const publisher = {
-    '@type': 'Organization',
+    '@type': `Organization`,
     name: author,
     description: defaultDescription,
     logo: {
-      '@type': 'ImageObject',
+      '@type': `ImageObject`,
       url: icon?.src,
       width: 60,
-      height: 60
-    }
+      height: 60,
+    },
   };
 
   const jsonLdConfigs: JsonLdConfigProps = [
     {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
+      '@context': `http://schema.org`,
+      '@type': `WebSite`,
       inLanguage: siteLanguage,
       url: siteTitle,
       name: title,
@@ -154,67 +149,60 @@ const SEO: React.FCX<Props> = ({
       image: seo.image,
       description: seo.description,
       author: jsonLdAuthor,
-      publisher
+      publisher,
       // potentialAction: {
       //   '@type': 'SearchAction',
       //   target: `${siteUrl}/search?q={q}`,
       //   'query-input': 'required name=q'
       // }
-    }
+    },
   ];
 
-  if (pathname !== '/') {
+  if (pathname !== `/`) {
     jsonLdConfigs.push({
-      '@context': 'http://schema.org',
-      '@type': 'BreadcrumbList',
+      '@context': `http://schema.org`,
+      '@type': `BreadcrumbList`,
       itemListElement: [
         {
-          '@type': 'ListItem',
+          '@type': `ListItem`,
           position: 1,
           item: {
             '@id': seo.url,
             name: seo.title,
-            image: seo.image
-          }
-        }
-      ]
+            image: seo.image,
+          },
+        },
+      ],
     });
 
     jsonLdConfigs.push({
-      '@context': 'http://schema.org',
-      '@type': 'BlogPosting',
+      '@context': `http://schema.org`,
+      '@type': `BlogPosting`,
       url: seo.url,
       name: title,
       alternateName: seo.title,
       headline: title,
       image: {
-        '@type': 'ImageObject',
-        url: seo.image
+        '@type': `ImageObject`,
+        url: seo.image,
       },
       description,
       datePublished: buildTime,
       dateModified: buildTime,
       mainEntityOfPage: {
-        '@type': 'WebPage',
-        '@id': seo.url
+        '@type': `WebPage`,
+        '@id': seo.url,
       },
       author: jsonLdAuthor,
-      publisher
+      publisher,
     });
   }
 
   return (
-    <Helmet
-      title={title}
-      defaultTitle={defaultTitle}
-      titleTemplate={`%s | ${siteTitle}`}
-    >
+    <Helmet title={title} defaultTitle={defaultTitle} titleTemplate={`%s | ${siteTitle}`}>
       <html lang={siteLanguage} />
 
-      <meta
-        name='viewport'
-        content='width=device-width, initial-scale=1.0, viewport-fit=cover, shrink-to-fit=no'
-      />
+      <meta name='viewport' content='width=device-width, initial-scale=1.0, viewport-fit=cover, shrink-to-fit=no' />
 
       <meta name='description' content={seo.description} />
       <meta name='image' content={seo.image} />
@@ -233,9 +221,7 @@ const SEO: React.FCX<Props> = ({
       <meta name='twitter:image' content={seo.image} />
       <meta name='twitter:image:alt' content={seo.description} />
       <meta name='twitter:creator' content={author} />
-      <script type='application/ld+json'>
-        {JSON.stringify(jsonLdConfigs)}
-      </script>
+      <script type='application/ld+json'>{JSON.stringify(jsonLdConfigs)}</script>
     </Helmet>
   );
 };

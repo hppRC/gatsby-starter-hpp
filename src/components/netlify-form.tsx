@@ -5,16 +5,10 @@ import styled from '@emotion/styled';
 //this form works only Netlify
 
 const Component: React.FCX = ({ className }) => (
-  <form
-    className={className}
-    name='contact'
-    method='POST'
-    data-netlify='true'
-    data-netlify-honeypot='bot-field'
-  >
+  <form className={className} name='contact' method='POST' data-netlify='true' data-netlify-honeypot='bot-field'>
     <input type='hidden' name='form-name' value='contact' />
     <input type='hidden' name='bot-field' />
-    <label>
+    <label htmlFor='name'>
       name<abbr title='required'>*</abbr>
       <input
         type='text'
@@ -28,7 +22,7 @@ const Component: React.FCX = ({ className }) => (
       />
     </label>
 
-    <label>
+    <label htmlFor='mail'>
       mail<abbr title='required'>*</abbr>
       <input
         type='email'
@@ -40,9 +34,9 @@ const Component: React.FCX = ({ className }) => (
       />
     </label>
 
-    <label>
+    <label htmlFor='message'>
       <p>message</p>
-      <abbr title='required'></abbr>
+      <abbr title='required' />
       <textarea name='content' rows={8} required />
     </label>
 
@@ -55,43 +49,43 @@ const StyledComponent = styled(Component)`
 
   > label {
     display: block;
+    width: 100%;
     max-width: 300px;
     padding: 1rem 0;
-    width: 100%;
 
     > abbr {
       text-decoration: none;
     }
 
-    > input[type='text'],
-    > input[type='email'] {
-      border: none;
-      border-bottom: 2px solid #000000;
-      padding: 0.3em;
-      transition: 0.5s;
-      width: 100%;
-      :focus {
-        border-bottom: 2px solid #00000055;
-        outline: none;
-      }
-    }
-
     > textarea {
-      border: 2px solid #00000055;
-      color: #000000;
-      transition: border 0.5s;
       width: 100%;
+      color: #000000;
+      border: 2px solid #00000055;
+      transition: border 0.5s;
       :focus {
         border: 2px solid #00000055;
         outline: none;
       }
+
+      > input[type='text'],
+      > input[type='email'] {
+        width: 100%;
+        padding: 0.3em;
+        border: none;
+        border-bottom: 2px solid #000000;
+        transition: 0.5s;
+        :focus {
+          border-bottom: 2px solid #00000055;
+          outline: none;
+        }
+      }
     }
 
     > button {
+      padding: 0.5rem 1rem;
+      color: #000000;
       border: 2px solid #00000055;
       border-radius: 5px;
-      color: #000000;
-      padding: 0.5rem 1rem;
     }
   }
 

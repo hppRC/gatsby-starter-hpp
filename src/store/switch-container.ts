@@ -5,7 +5,7 @@ const Component = () => {
   const [open, setOpen] = useState(false);
 
   const toggle = () => {
-    setOpen(open => !open);
+    setOpen((open) => !open);
   };
 
   return { open, setOpen, toggle };

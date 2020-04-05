@@ -1,3 +1,5 @@
+import 'sanitize.css';
+
 import { WrapRootElement, WrapPageElement } from 'src/components';
 
 export const wrapRootElement = WrapRootElement;

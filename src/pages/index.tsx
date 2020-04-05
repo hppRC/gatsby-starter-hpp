@@ -4,17 +4,15 @@ import { baseStyle } from 'src/styles';
 
 import styled from '@emotion/styled';
 
-const Component: React.FCX = ({ className }) => {
-  return (
-    <main className={className}>
-      <h1>this is Component page!</h1>
-      <AnyImage filename='banner.png' />
-    </main>
-  );
-};
+const Component: React.FCX = ({ className }) => (
+  <main className={className}>
+    <h1>this is Component page!</h1>
+    <AnyImage filename='banner.png' />
+  </main>
+);
 
 const StyledComponent = styled(Component)`
-  ${baseStyle};
+  ${baseStyle}
   @media screen and (max-width: 1100px) {
   }
   @media screen and (max-width: 768px) {
@@ -25,11 +23,9 @@ const StyledComponent = styled(Component)`
   }
 `;
 
-export default (props: any) => {
-  return (
-    <>
-      <SEO title='Top' pathname={props.path} />
-      <StyledComponent />
-    </>
-  );
-};
+export default ({ path }: { path: string }) => (
+  <>
+    <SEO title='Top' pathname={path} />
+    <StyledComponent />
+  </>
+);

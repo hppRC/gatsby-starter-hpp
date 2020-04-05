@@ -5,48 +5,23 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
     'plugin:prettier/recommended',
-    'prettier/@typescript-eslint'
+    'prettier/@typescript-eslint',
   ],
-  plugins: ['@typescript-eslint', 'prettier', 'react-hooks'],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint', 'react', 'prettier', 'react-hooks'],
   parserOptions: {
-    ecmaVersion: 2019, // Allows for the parsing of modern ECMAScript features
+    ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
     sourceType: 'module', // Allows for the use of imports
-    ecmaFeatures: {
-      jsx: true
-    }
+    ecmaFeatures: { jsx: true },
   },
-  env: {
-    browser: true,
-    node: true
-  },
+  env: { browser: true, node: true, es6: true },
   rules: {
-    '@typescript-eslint/no-unused-vars': [
-      1,
-      {
-        argsIgnorePattern: 'res|next|stage|^err|on|config|e|_'
-      }
-    ],
+    '@typescript-eslint/no-unused-vars': [1, { argsIgnorePattern: 'res|next|stage|^err|on|config|e|_' }],
     'arrow-body-style': [2, 'as-needed'],
-    'no-param-reassign': [
-      2,
-      {
-        props: false
-      }
-    ],
-    'no-unused-expressions': [
-      1,
-      {
-        allowTaggedTemplates: true
-      }
-    ],
+    'no-param-reassign': [2, { props: false }],
+    'no-unused-expressions': [1, { allowTaggedTemplates: true }],
     quotes: 'off',
-    '@typescript-eslint/quotes': [
-      2,
-      'backtick',
-      {
-        avoidEscape: true
-      }
-    ],
+    '@typescript-eslint/quotes': [2, 'backtick', { avoidEscape: true }],
     '@typescript-eslint/prefer-interface': 0,
     '@typescript-eslint/explicit-function-return-type': 0,
     '@typescript-eslint/no-use-before-define': 0,
@@ -61,6 +36,7 @@ module.exports = {
     'linebreak-style': 0,
     'consistent-return': 0,
     import: 0,
+    'import/order': 0,
     'import/no-unresolved': 0,
     'func-names': 0,
     'import/no-extraneous-dependencies': 0,
@@ -79,28 +55,18 @@ module.exports = {
     'react/jsx-props-no-spreading': 0,
     'react/jsx-fragments': 0,
     'react/jsx-curly-brace-presence': 0,
-    'react/jsx-filename-extension': [
-      1,
-      {
-        extensions: ['.js', '.jsx', '.tsx']
-      }
-    ],
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', 'ts', '.tsx'] }],
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 0,
     indent: ['error', 2, { SwitchCase: 1 }],
-    'prettier/prettier': [
-      'error',
-      {
-        trailingComma: 'es5',
-        printWidth: 120
-      }
-    ],
+    'prettier/prettier': ['error', { arrowParens: 'always', printWidth: 120 }],
     'jsx-a11y/href-no-hash': 'off',
-    'jsx-a11y/anchor-is-valid': [
-      'warn',
-      {
-        aspects: ['invalidHref']
-      }
-    ]
-  }
+    'jsx-a11y/anchor-is-valid': ['warn', { aspects: ['invalidHref'] }],
+    'no-shadow': 0,
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };

@@ -6,9 +6,7 @@ import styled from '@emotion/styled';
 type ContainerProps = { element: React.ReactNode };
 type Props = {} & ContainerProps;
 
-const Component: React.FCX<Props> = ({ element }) => {
-  return <Layout>{element}</Layout>;
-};
+const Component: React.FCX<Props> = ({ element }) => <Layout>{element}</Layout>;
 
 const StyledComponent = styled(Component)`
   @media screen and (max-width: 1100px) {
@@ -21,8 +19,6 @@ const StyledComponent = styled(Component)`
   }
 `;
 
-const Container: React.FCX<ContainerProps> = props => {
-  return <StyledComponent {...props} />;
-};
+const Container: React.FCX<ContainerProps> = (props) => <StyledComponent {...props} />;
 
 export default Container;

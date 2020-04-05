@@ -1,34 +1,33 @@
-const config = {
-  siteTitle: `Gatsby Starter hpp`,
+const siteTitle = `Gatsby Starter hpp`;
+const siteUrl = `https://gatsby-starter-hpp.netlify.com`;
+const siteDescription = `simple gatsby starter with mdx, typescript, pwa`;
+
+const siteMetadata = {
+  siteTitle,
   siteTitleAlt: `Gatsby Starter hpp - @hppRC/gatsby-starter-hpp`,
   siteHeadline: `Gatsby Starter hpp - Gatsby Starter from @hppRC`,
-  siteUrl: `https://gatsby-starter-hpp.netlify.com`,
-  siteDescription: `simple gatsby starter with mdx, typescript, pwa`,
+  siteUrl,
+  siteDescription,
   siteLanguage: `en`,
   author: `@hpp_ricecake`, // twitter account id
   basePath: `/`,
   social: {
-    twitter: 'https://twitter.com/hpp_ricecake',
-    github: 'https://github.com/hppRC',
-    qiita: 'https://qiita.com/hppRC'
-  }
+    twitter: `https://twitter.com/hpp_ricecake`,
+    github: `https://github.com/hppRC`,
+    qiita: `https://qiita.com/hppRC`,
+  },
 };
 
 module.exports = {
-  siteMetadata: config,
+  siteMetadata,
   plugins: [
-    `gatsby-plugin-root-import`,
-    `gatsby-plugin-typescript`,
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-catch-links`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        name: `assets`,
+        path: `assets`,
+      },
     },
     {
       resolve: `gatsby-plugin-mdx`,
@@ -41,58 +40,21 @@ module.exports = {
             options: {
               maxWidth: 1400,
               quality: 90,
-              linkImagesToOriginal: true
-            }
-          }
-        ]
-      }
-    },
-    `gatsby-plugin-netlify`,
-    `gatsby-plugin-netlify-cache`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
-      options: {
-        siteUrl: config.siteUrl
-      }
-    },
-    `gatsby-plugin-advanced-sitemap`,
-    {
-      resolve: `gatsby-plugin-robots-txt`,
-      options: {
-        host: config.siteUrl,
-        sitemap: `${config.siteUrl}/sitemap.xml`,
-        policy: [{ userAgent: `*`, allow: `/` }]
-      }
+              linkImagesToOriginal: true,
+            },
+          },
+        ],
+      },
     },
     {
-      resolve: `gatsby-plugin-webpack-bundle-analyzer`,
+      resolve: `@hpprc/gatsby-theme-core`,
       options: {
-        openAnalyzer: false
-      }
+        siteTitle,
+        siteUrl,
+        siteDescription,
+        iconPath: `./assets/icon.png`,
+        googleAnalyticsTrackingId: `UA-149661454-1`,
+      },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: `UA-149661454-1`
-      }
-    },
-    // gatsby-plugin-manifest should be described before gatsby-plugin-offline
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: config.siteTitle,
-        short_name: `hpp`,
-        description: config.siteDescription,
-        Scope: `/`,
-        start_url: `/?utm_source=homescreen`,
-        background_color: `#ffffff`,
-        theme_color: `#ffffff`,
-        display: `standalone`,
-        icon: `./src/images/icon.png`
-      }
-    },
-    `gatsby-plugin-offline`
-  ]
+  ],
 };

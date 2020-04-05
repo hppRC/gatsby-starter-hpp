@@ -38,9 +38,7 @@ export default (filename: string) => {
     }
   `);
 
-  const image = data.images.edges.find(edge => {
-    return edge.node.relativePath.includes(filename);
-  });
+  const image = data.images.edges.find((edge) => edge.node.relativePath.includes(filename));
 
   return image?.node.childImageSharp?.fluid;
 };

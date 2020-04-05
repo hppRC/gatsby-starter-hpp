@@ -7,17 +7,17 @@ type ContainerProps = {};
 type Props = { open: boolean; toggle: () => void } & ContainerProps;
 
 const Component: React.FCX<Props> = ({ className, open, toggle }) => (
-  <button onClick={toggle} className={className}>
-    {open ? 'open' : 'close'}
+  <button type='button' onClick={toggle} className={className}>
+    {open ? `open` : `close`}
   </button>
 );
 
 const StyledComponent = styled(Component)`
-  background-color: #000000;
-  border-radius: 5px;
+  padding: 2rem;
   color: #ffffff;
   cursor: pointer;
-  padding: 2rem;
+  background-color: #000000;
+  border-radius: 5px;
 
   @media screen and (max-width: 1100px) {
   }

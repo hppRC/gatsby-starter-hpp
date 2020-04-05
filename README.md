@@ -9,7 +9,7 @@ simplest gatsby skelton.
 - node.js  
    `version: 13.5.0`
 - yarn  
-   `version: 21.1.0`
+   `version: 1.22.0`
 
 ## Get Started
 

@@ -1,10 +1,8 @@
-'use strict';
-
-require('ts-node').register({
+require(`ts-node`).register({
   compilerOptions: {
-    module: 'commonjs',
-    target: 'es2019'
-  }
+    module: `commonjs`,
+    target: `es2019`,
+  },
 });
 
-exports.createPages = require('./gatsby-node/index').createPages;
+exports.createPages = require(`./gatsby-node/index`).createPages;
