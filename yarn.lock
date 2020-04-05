@@ -1662,7 +1662,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^13.11.0":
+"@types/node@*", "@types/node@13.11.0":
   version "13.11.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.11.0.tgz#390ea202539c61c8fa6ba4428b57e05bc36dc47b"
   integrity sha512-uM4mnmsIIPK/yeO+42F2RQhGUIs39K2RFmugcJANppXe6J1nvH87PvzPZYpza7Xhhs8Yn9yIAVdLZ84z61+0xQ==
@@ -1761,7 +1761,7 @@
   resolved "https://registry.yarnpkg.com/@types/yoga-layout/-/yoga-layout-1.9.1.tgz#6c00e4a151a9a529397d580e2cf6f3947a42a928"
   integrity sha512-OpfgQXWLZn5Dl7mOd8dBNcV8NywXbYYoHjUpa64vJ/RQABaxMzJ5bVicKLGIvIiMnQPtPgKNgXb5jkv9fkOQtw==
 
-"@typescript-eslint/eslint-plugin@^2.24.0", "@typescript-eslint/eslint-plugin@^2.26.0":
+"@typescript-eslint/eslint-plugin@2.26.0", "@typescript-eslint/eslint-plugin@^2.24.0":
   version "2.26.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-2.26.0.tgz#04c96560c8981421e5a9caad8394192363cc423f"
   integrity sha512-4yUnLv40bzfzsXcTAtZyTjbiGUXMrcIJcIMioI22tSOyAxpdXiZ4r7YQUU8Jj6XXrLz9d5aMHPQf5JFR7h27Nw==
@@ -1781,7 +1781,7 @@
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
-"@typescript-eslint/parser@^2.24.0", "@typescript-eslint/parser@^2.26.0":
+"@typescript-eslint/parser@2.26.0", "@typescript-eslint/parser@^2.24.0":
   version "2.26.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-2.26.0.tgz#385463615818b33acb72a25b39c03579df93d76f"
   integrity sha512-+Xj5fucDtdKEVGSh9353wcnseMRkPpEAOY96EEenN7kJVrLqy/EVwtIh3mxcUz8lsFXW1mT5nN5vvEam/a5HiQ==
@@ -5101,7 +5101,7 @@ eslint-config-airbnb-base@^14.1.0:
     object.assign "^4.1.0"
     object.entries "^1.1.1"
 
-eslint-config-airbnb@^18.1.0:
+eslint-config-airbnb@18.1.0:
   version "18.1.0"
   resolved "https://registry.yarnpkg.com/eslint-config-airbnb/-/eslint-config-airbnb-18.1.0.tgz#724d7e93dadd2169492ff5363c5aaa779e01257d"
   integrity sha512-kZFuQC/MPnH7KJp6v95xsLBf63G/w7YqdPfQ0MUanxQ7zcKUNG8j+sSY860g3NwCBOa62apw16J6pRN+AOgXzw==
@@ -5110,7 +5110,7 @@ eslint-config-airbnb@^18.1.0:
     object.assign "^4.1.0"
     object.entries "^1.1.1"
 
-eslint-config-prettier@^6.10.1:
+eslint-config-prettier@6.10.1:
   version "6.10.1"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.10.1.tgz#129ef9ec575d5ddc0e269667bf09defcd898642a"
   integrity sha512-svTy6zh1ecQojvpbJSgH3aei/Rt7C6i090l5f2WQ4aB05lYHeZIR1qL4wZyyILTbtmnbHP5Yn8MrsOJMGa8RkQ==
@@ -5166,7 +5166,7 @@ eslint-plugin-graphql@^3.1.1:
     graphql-config "^2.0.1"
     lodash "^4.11.1"
 
-eslint-plugin-import@^2.20.1, eslint-plugin-import@^2.20.2:
+eslint-plugin-import@2.20.2, eslint-plugin-import@^2.20.1:
   version "2.20.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.20.2.tgz#91fc3807ce08be4837141272c8b99073906e588d"
   integrity sha512-FObidqpXrR8OnCh4iNsxy+WACztJLXAHBO5hK79T1Hc77PgQZkyDGA5Ag9xAvRpglvLNxhH/zSmZ70/pZ31dHg==
@@ -5184,7 +5184,7 @@ eslint-plugin-import@^2.20.1, eslint-plugin-import@^2.20.2:
     read-pkg-up "^2.0.0"
     resolve "^1.12.0"
 
-eslint-plugin-jsx-a11y@^6.2.3:
+eslint-plugin-jsx-a11y@6.2.3, eslint-plugin-jsx-a11y@^6.2.3:
   version "6.2.3"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsx-a11y/-/eslint-plugin-jsx-a11y-6.2.3.tgz#b872a09d5de51af70a97db1eea7dc933043708aa"
   integrity sha512-CawzfGt9w83tyuVekn0GDPU9ytYtxyxyFZ3aSWROmnRRFQFT2BiPJd7jvRdzNDi6oLWaS2asMeYSNMjWTV4eNg==
@@ -5199,24 +5199,24 @@ eslint-plugin-jsx-a11y@^6.2.3:
     has "^1.0.3"
     jsx-ast-utils "^2.2.1"
 
-eslint-plugin-prettier@^3.1.2:
+eslint-plugin-prettier@3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.2.tgz#432e5a667666ab84ce72f945c72f77d996a5c9ba"
   integrity sha512-GlolCC9y3XZfv3RQfwGew7NnuFDKsfI4lbvRK+PIIo23SFH+LemGs4cKwzAaRa+Mdb+lQO/STaIayno8T5sJJA==
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
+eslint-plugin-react-hooks@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-3.0.0.tgz#9e80c71846eb68dd29c3b21d832728aa66e5bd35"
+  integrity sha512-EjxTHxjLKIBWFgDJdhKKzLh5q+vjTFrqNZX36uIxWS4OfyXe5DawqPj3U5qeJ1ngLwatjzQnmR0Lz0J0YH3kxw==
+
 eslint-plugin-react-hooks@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-1.7.0.tgz#6210b6d5a37205f0b92858f895a4e827020a7d04"
   integrity sha512-iXTCFcOmlWvw4+TOE8CLWj6yX1GwzT0Y6cUfHHZqWnSk144VmVIRcVGtUAzrLES7C798lmvnt02C7rxaOX1HNA==
 
-eslint-plugin-react-hooks@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-3.0.0.tgz#9e80c71846eb68dd29c3b21d832728aa66e5bd35"
-  integrity sha512-EjxTHxjLKIBWFgDJdhKKzLh5q+vjTFrqNZX36uIxWS4OfyXe5DawqPj3U5qeJ1ngLwatjzQnmR0Lz0J0YH3kxw==
-
-eslint-plugin-react@^7.19.0:
+eslint-plugin-react@7.19.0, eslint-plugin-react@^7.19.0:
   version "7.19.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.19.0.tgz#6d08f9673628aa69c5559d33489e855d83551666"
   integrity sha512-SPT8j72CGuAP+JFbT0sJHOB80TX/pu44gQ4vXH/cq+hQTiY2PuZ6IHkqXJV6x1b28GDdo1lbInjKUrrdUf0LOQ==
@@ -5269,7 +5269,7 @@ eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
-eslint@^6.8.0:
+eslint@6.8.0, eslint@^6.8.0:
   version "6.8.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.8.0.tgz#62262d6729739f9275723824302fb227c8c93ffb"
   integrity sha512-K+Iayyo2LtyYhDSYwz5D5QdWw0hCacNzyq1Y821Xna2xSJj7cijoLLYmLxTQgcgZ9mC61nryMy9S7GRbYpI5Ig==
@@ -11297,7 +11297,7 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.0.2:
+prettier@2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.2.tgz#1ba8f3eb92231e769b7fcd7cb73ae1b6b74ade08"
   integrity sha512-5xJQIPT8BraI7ZnaDwSbu5zLrB6vvi8hVV58yHQ+QK64qrY40dULy0HSRlQ2/2IdzeBpjhDkqdcFBnFeDEMVdg==
@@ -13473,38 +13473,38 @@ stylehacks@^4.0.0:
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
-stylelint-config-recess-order@^2.0.4:
+stylelint-config-recess-order@2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/stylelint-config-recess-order/-/stylelint-config-recess-order-2.0.4.tgz#252baa9515bfdad568ff49ba2888abcb6988186a"
   integrity sha512-lWCVL5VyEGz4MOFDhPt79ibhv+E3mqerd/8thzOCN7Nuk+rGNR/AebtyHNeKm1xMm5Ri6czHGxWPXwmrSPo3yQ==
   dependencies:
     stylelint-order "4.0.x"
 
-stylelint-config-recommended@^3.0.0:
+stylelint-config-recommended@3.0.0, stylelint-config-recommended@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-3.0.0.tgz#e0e547434016c5539fe2650afd58049a2fd1d657"
   integrity sha512-F6yTRuc06xr1h5Qw/ykb2LuFynJ2IxkKfCMf+1xqPffkxh0S09Zc902XCffcsw/XMFq/OzQ1w54fLIDtmRNHnQ==
 
-stylelint-config-standard@^20.0.0:
+stylelint-config-standard@20.0.0:
   version "20.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-standard/-/stylelint-config-standard-20.0.0.tgz#06135090c9e064befee3d594289f50e295b5e20d"
   integrity sha512-IB2iFdzOTA/zS4jSVav6z+wGtin08qfj+YyExHB3LF9lnouQht//YyB0KZq9gGz5HNPkddHOzcY8HsUey6ZUlA==
   dependencies:
     stylelint-config-recommended "^3.0.0"
 
-stylelint-config-styled-components@^0.1.1:
+stylelint-config-styled-components@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/stylelint-config-styled-components/-/stylelint-config-styled-components-0.1.1.tgz#b408388d7c687833ab4be4c4e6522d97d2827ede"
   integrity sha512-z5Xz/9GmvxO6e/DLzBMwkB85zHxEEjN6K7Cj80Bi+o/9vR9eS3GX3E9VuMnX9WLFYulqbqLtTapGGY28JBiy9Q==
 
-stylelint-declaration-block-no-ignored-properties@^2.3.0:
+stylelint-declaration-block-no-ignored-properties@2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/stylelint-declaration-block-no-ignored-properties/-/stylelint-declaration-block-no-ignored-properties-2.3.0.tgz#98a641a137bf057c97ef3d3c4a848cd339e736da"
   integrity sha512-0Ly/mKc3prAhxBSY5TbmMMDAkUHYMOxdmUu/mNcFvB6A53C24x5Rsu1Vtrik9bKPKwgd75sZUhV9ZsWerPbuJQ==
   dependencies:
     postcss "^7.0.27"
 
-stylelint-no-unsupported-browser-features@^4.0.0:
+stylelint-no-unsupported-browser-features@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-no-unsupported-browser-features/-/stylelint-no-unsupported-browser-features-4.0.0.tgz#f2b6364cb53f364a6297b949a61edc1cf3cedf52"
   integrity sha512-CwuJ/g+aNADYkyFsrW8eyK/vVOh5INkMRJEx99RZD13SgqzexnRArG/R1LTs4h0Xsi9eAxIEzsyYW40nd90gcw==
@@ -13513,7 +13513,7 @@ stylelint-no-unsupported-browser-features@^4.0.0:
     lodash "^4.17.15"
     postcss "^7.0.21"
 
-stylelint-order@4.0.x, stylelint-order@^4.0.0:
+stylelint-order@4.0.0, stylelint-order@4.0.x:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-4.0.0.tgz#2a945c2198caac3ff44687d7c8582c81d044b556"
   integrity sha512-bXV0v+jfB0+JKsqIn3mLglg1Dj2QCYkFHNfL1c+rVMEmruZmW5LUqT/ARBERfBm8SFtCuXpEdatidw/3IkcoiA==
@@ -13522,7 +13522,7 @@ stylelint-order@4.0.x, stylelint-order@^4.0.0:
     postcss "^7.0.26"
     postcss-sorting "^5.0.1"
 
-stylelint@^13.3.0:
+stylelint@13.3.0:
   version "13.3.0"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-13.3.0.tgz#06a5e3d34e99d1d02891bc827f660f2bd2e79897"
   integrity sha512-ehNzQu9JAbxuiNhUhmoyPgMjIdz7Fg1AxC5urPVhKotto/faF5GxwljSoLvQa6pB6yd+BVuofApWjWT/6/rBMQ==
@@ -14063,7 +14063,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.9.0-beta:
+typescript@3.9.0-dev.20200405, typescript@^3.9.0-beta:
   version "3.9.0-dev.20200405"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.0-dev.20200405.tgz#2cf5c787e9e99043126abcc1cc90f25a3ff8140d"
   integrity sha512-4z2kgQDaMmhsOkCFCkLBPwgFxjI3Hft7NOzUllQ31YhT5f8oqUjcgpKWL+MX98a0/nVdZqLPTVPMXwNYsl9G+w==
