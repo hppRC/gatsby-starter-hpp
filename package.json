@@ -38,7 +38,7 @@
     "utility-types": "^3.10.0"
   },
   "devDependencies": {
-    "@types/node": "13.11.0",
+    "@types/node": "13.11.1",
     "@typescript-eslint/eslint-plugin": "2.26.0",
     "@typescript-eslint/parser": "2.26.0",
     "eslint": "6.8.0",
