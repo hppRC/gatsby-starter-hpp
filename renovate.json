@@ -1,9 +1,3 @@
 {
-  "extends": ["config:base", "schedule:weekly"],
-  "packageRules": [
-    {
-      "updateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
-    }
-  ]
+  "extends": ["@hpprc:maintenance"]
 }
