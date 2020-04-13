@@ -58,6 +58,6 @@
     "stylelint-declaration-block-no-ignored-properties": "2.3.0",
     "stylelint-no-unsupported-browser-features": "4.0.0",
     "stylelint-order": "4.0.0",
-    "typescript": "3.9.0-dev.20200410"
+    "typescript": "3.9.0-dev.20200412"
   }
 }
