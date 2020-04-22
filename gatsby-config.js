@@ -22,6 +22,7 @@ module.exports = {
   siteMetadata,
   plugins: [
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

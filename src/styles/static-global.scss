@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%;
+
+  body {
+    overflow-x: hidden;
+    font-size: 1.6em;
+    /*overscroll-behavior-y: none;*/
+    color: #09090f;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.4em;
+    }
+
+    @media screen and (max-width: 480px) {
+    }
+  }
+}
+
+#gatsby-focus-wrapper {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
