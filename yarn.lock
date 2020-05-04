@@ -1083,10 +1083,10 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@hpprc/gatsby-theme-core@^0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@hpprc/gatsby-theme-core/-/gatsby-theme-core-0.0.9.tgz#907ba2f3e3cdb8f9a6f31ff73654663409c684ac"
-  integrity sha512-FYuoCY4j7Wk/lpZqQKl9DHRVAPzpOpooeUFeJK1xmlISXr5FrDIXyS4NmEArqCyxcck8E+I9EgGvQMlj/+Tw6w==
+"@hpprc/gatsby-theme-core@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@hpprc/gatsby-theme-core/-/gatsby-theme-core-0.1.0.tgz#fb4749e13cfca0e9d45a4d5647ee2fafab9ca4ee"
+  integrity sha512-zEOArD2Pb5zf+JTTqf0+hjumyQ8O0jiwss//bnA8/vF/rXv4KMQb/laLwMpOoQR2IRxLK0LWdvFQybPEup6ALg==
   dependencies:
     "@babel/core" "^7.9.0"
     "@types/react" "^16.9.32"
@@ -1108,8 +1108,6 @@
     gatsby-plugin-typescript "^2.3.1"
     gatsby-plugin-webpack-bundle-analyzer "^1.0.5"
     gatsby-transformer-sharp "^2.4.3"
-    react "^16.13.1"
-    react-dom "^16.13.1"
     react-helmet "^5.2.1"
     typescript "^3.9.0-beta"
 
