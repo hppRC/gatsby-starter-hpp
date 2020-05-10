@@ -1,0 +1,29 @@
+- name: ready-for-merge
+  color: 02c39a
+
+- name: experimental
+  color: e76f51
+
+- name: WIP
+  color: 0077b6
+
+- name: workflow
+  color: bfc0c0
+
+- name: dependencies
+  color: 222E50
+
+- name: source
+  color: 88d498
+
+- name: styling
+  color: 3a86ff
+
+- name: assets
+  color: ffba08
+
+- name: gatsby
+  color: 240046
+
+- name: config
+  color: f8e16c

@@ -1,0 +1,22 @@
+name: Sync labels
+
+on:
+  push:
+    branches:
+      - gh-pages
+    paths:
+      - ".github/labels.yml"
+      - ".github/workflows/label_sync.yml"
+
+jobs:
+  labeler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: crazy-max/ghaction-github-labeler@v2
+        with:
+          yaml_file: ".github/labels.yml"
+          skip_delete: true # 定義ファイルに記載の無いラベルの削除を行わない
+          dry_run: false # 実際に反映する。trueの場合は、結果のみ表示で反映しない。
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
