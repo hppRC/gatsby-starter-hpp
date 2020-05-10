@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - master
+
+name: hpp blog lint
+jobs:
+  lint:
+    name: Lint check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: yarn install
+      - run: yarn lint
