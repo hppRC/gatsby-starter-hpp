@@ -2,9 +2,9 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bbee222e-f232-452e-b6ba-d58f6c1af937/deploy-status)](https://app.netlify.com/sites/gatsby-starter-hpp/deploys)
 
-![](https://github.com/hppRC/gatsby-starter-hpp/workflows/lint.yml/badge.svg)
+![](https://github.com/hppRC/gatsby-starter-hpp/workflows/hpp%20blog%20lint/badge.svg)
 
-![](https://github.com/hppRC/gatsby-starter-hpp/workflows/lighthouse-ci.yml/badge.svg)
+![](https://github.com/hppRC/gatsby-starter-hpp/workflows/Build%20project%20and%20Run%20Lighthouse%20CI/badge.svg)
 
 simplest gatsby skelton.
 
