@@ -11,7 +11,7 @@
   color: bfc0c0
 
 - name: dependencies
-  color: 222E50
+  color: "222e50"
 
 - name: source
   color: 88d498
@@ -23,7 +23,7 @@
   color: ffba08
 
 - name: gatsby
-  color: 240046
+  color: "240046"
 
 - name: config
   color: f8e16c
