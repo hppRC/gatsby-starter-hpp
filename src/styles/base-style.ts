@@ -3,15 +3,15 @@ import { css } from '@emotion/core';
 export default css`
   flex: 1;
 
-  margin: 0 auto;
+  width: 100%;
   max-width: 1400px;
   padding: 10vh 2vw 5vw 2vw;
 
-  width: 100%;
+  margin: 0 auto;
 
   > h1 {
-    font-size: 4rem;
     padding-bottom: 3rem;
+    font-size: 4rem;
   }
 
   @media screen and (max-width: 1100px) {

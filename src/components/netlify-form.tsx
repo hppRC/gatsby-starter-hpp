@@ -2,14 +2,15 @@ import React from 'react';
 
 import styled from '@emotion/styled';
 
-//this form works only Netlify
+// this form works only Netlify
 
 const Component: React.FCX = ({ className }) => (
   <form className={className} name='contact' method='POST' data-netlify='true' data-netlify-honeypot='bot-field'>
     <input type='hidden' name='form-name' value='contact' />
     <input type='hidden' name='bot-field' />
     <label htmlFor='name'>
-      name<abbr title='required'>*</abbr>
+      name
+      <abbr title='required'>*</abbr>
       <input
         type='text'
         className='form-control'
@@ -23,7 +24,8 @@ const Component: React.FCX = ({ className }) => (
     </label>
 
     <label htmlFor='mail'>
-      mail<abbr title='required'>*</abbr>
+      mail
+      <abbr title='required'>*</abbr>
       <input
         type='email'
         name='email'

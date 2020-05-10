@@ -18,15 +18,6 @@ const StyledComponent = styled(Component)`
   cursor: pointer;
   background-color: #000000;
   border-radius: 5px;
-
-  @media screen and (max-width: 1100px) {
-  }
-  @media screen and (max-width: 768px) {
-  }
-  @media screen and (max-width: 480px) {
-  }
-  @media screen and (max-height: 430px) {
-  }
 `;
 
 const Container: React.FCX = () => {

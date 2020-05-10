@@ -19,8 +19,8 @@ type Props = DeepReadonly<{
  * use any image in src/images
  */
 export default (filename: string) => {
-  //relativePath: path from `image`
-  //it is configured in gatsby-config.js of `gatsby-source-filesystem`
+  // relativePath: path from `image`
+  // it is configured in gatsby-config.js of `gatsby-source-filesystem`
   const data = useStaticQuery<Props>(graphql`
     query {
       images: allFile {
