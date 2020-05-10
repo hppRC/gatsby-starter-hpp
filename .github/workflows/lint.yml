@@ -1,9 +1,8 @@
+name: Lint
 on:
   push:
     branches:
       - master
-
-name: hpp blog lint
 jobs:
   lint:
     name: Lint check
