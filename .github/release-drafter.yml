@@ -5,13 +5,25 @@ categories:
     labels:
       - "feature"
       - "enhancement"
-  - title: "🐛 Bug Fixes"
+
+  - title: ":bug: Bug Fixes"
     labels:
       - "fix"
       - "bugfix"
       - "bug"
+
   - title: "🧰 Maintenance"
     label: "chore"
+
+  - title: ":white_check_mark: Workflows"
+    label: "workflow"
+
+  - title: ":up: Dependencies"
+    label: "dependencies"
+
+  - title: ":art: Styling"
+    label: "styling"
+
 change-template: "- $TITLE @$AUTHOR (#$NUMBER)"
 template: |
   ## Changes
