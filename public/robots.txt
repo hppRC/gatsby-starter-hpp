@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://gatsby-starter-hpp.netlify.com/sitemap.xml
+Host: https://gatsby-starter-hpp.netlify.com
