@@ -3,8 +3,7 @@ import { SwitchContainer } from 'src/store';
 
 import styled from '@emotion/styled';
 
-type ContainerProps = {};
-type Props = { open: boolean; toggle: () => void } & ContainerProps;
+type Props = { open: boolean; toggle: () => void };
 
 const Component: React.FCX<Props> = ({ className, open, toggle }) => (
   <button type='button' onClick={toggle} className={className}>

@@ -5,7 +5,7 @@ import { SwitchContainer } from 'src/store';
 import styled from '@emotion/styled';
 
 type ContainerProps = { element: React.ReactNode };
-type Props = {} & ContainerProps;
+type Props = ContainerProps;
 
 // you can use this component for some providers for redux, context API, etc...
 const Component: React.FCX<Props> = ({ element }) => (

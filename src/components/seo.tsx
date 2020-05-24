@@ -64,7 +64,7 @@ type JsonLdConfigProps = DeepReadonly<
     ];
     datePublished: string;
     dateModified: string;
-    potentialAction: {};
+    potentialAction: Record<string, unknown>;
     mainEntityOfPage: {
       '@type': string;
       '@id': string;

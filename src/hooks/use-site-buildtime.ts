@@ -7,7 +7,7 @@ type Props = DeepReadonly<{
   };
 }>;
 
-export default () => {
+export default (): string => {
   const data = useStaticQuery<Props>(graphql`
     query {
       site {

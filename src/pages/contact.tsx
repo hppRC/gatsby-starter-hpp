@@ -15,7 +15,7 @@ const StyledComponent = styled(Component)`
   ${baseStyle}
 `;
 
-export default ({ path }: { path: string }) => (
+export default ({ path }: { path: string }): JSX.Element => (
   <>
     <SEO title='Contact' pathname={path} />
     <StyledComponent />
