@@ -7271,10 +7271,10 @@ gatsby-remark-relative-images@0.3.0:
     slash "^2.0.0"
     unist-util-select "^1.5.0"
 
-gatsby-source-filesystem@2.3.8:
-  version "2.3.8"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.3.8.tgz#c1902fefdd700f2b34eea2d6dcd75543e49f90e2"
-  integrity sha512-b+K1WU8x7Ekxf1f7FrSAtjOkHhWTlrDJhubkA38SUgSbmKDotTOoU+bLi7PlnA3GgUnZ9kGSvzXNImRc6fFPCg==
+gatsby-source-filesystem@2.3.9:
+  version "2.3.9"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.3.9.tgz#2edc21ec0acc8b46c0196d084ed937bee3fe6f6d"
+  integrity sha512-hOcXj5yeLst9zwbJ+T7OQyKZa18iVOomP/1rzfwfQ+fGTHDVt9tc2m5VlVXGSfSoSefnx80EOCmmKqHzC3B/ng==
   dependencies:
     "@babel/runtime" "^7.9.6"
     better-queue "^3.8.10"
