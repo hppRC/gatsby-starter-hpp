@@ -59,7 +59,7 @@
     "gatsby-plugin-root-import": "2.0.5",
     "gatsby-plugin-sass": "2.3.4",
     "gatsby-plugin-sharp": "2.6.11",
-    "gatsby-plugin-ts-config": "0.2.2",
+    "gatsby-plugin-ts-config": "0.2.3",
     "gatsby-plugin-typescript": "2.4.6",
     "gatsby-plugin-webpack-bundle-analyzer": "1.0.5",
     "gatsby-remark-images": "3.3.10",
