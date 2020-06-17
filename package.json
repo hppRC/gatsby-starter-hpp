@@ -52,7 +52,7 @@
     "gatsby-plugin-mdx": "1.2.15",
     "gatsby-plugin-netlify": "2.3.5",
     "gatsby-plugin-netlify-cache": "1.2.0",
-    "gatsby-plugin-offline": "3.2.9",
+    "gatsby-plugin-offline": "3.2.10",
     "gatsby-plugin-react-helmet": "3.3.4",
     "gatsby-plugin-react-helmet-canonical-urls": "1.4.0",
     "gatsby-plugin-robots-txt": "1.5.1",
