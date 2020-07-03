@@ -60,7 +60,7 @@
     "gatsby-plugin-sass": "2.3.10",
     "gatsby-plugin-sharp": "2.6.17",
     "gatsby-plugin-ts-config": "0.2.3",
-    "gatsby-plugin-typescript": "2.4.12",
+    "gatsby-plugin-typescript": "2.4.13",
     "gatsby-plugin-webpack-bundle-analyzer": "1.0.5",
     "gatsby-remark-images": "3.3.17",
     "gatsby-remark-relative-images": "0.3.0",
