@@ -8036,10 +8036,10 @@ gatsby-plugin-manifest@2.4.17:
     semver "^5.7.1"
     sharp "^0.25.1"
 
-gatsby-plugin-mdx@1.2.22:
-  version "1.2.22"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.2.22.tgz#2908ceb38195a012b2fb44ae0e9d9854a130c674"
-  integrity sha512-SBWP+ew9tygf0EVnOAqd2fqeHN8DceBGamEgNXeohay8XR33itcp/dE3j9p8ULwgOJtAqB+GDdBEzxUt2t9zoQ==
+gatsby-plugin-mdx@1.2.23:
+  version "1.2.23"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.2.23.tgz#3cadfbed8cc73a78df2af7ffb3876500eb45d330"
+  integrity sha512-9kwfEm2/xi5SvkeozDiTyKlk7fIba9dN4vFgEVawWA2v7txz+L4E84EznKz6GpcBjb8VU3dkq/bga/bGuJ71JQ==
   dependencies:
     "@babel/core" "^7.10.3"
     "@babel/generator" "^7.10.3"
@@ -8149,10 +8149,10 @@ gatsby-plugin-root-import@2.0.5:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-root-import/-/gatsby-plugin-root-import-2.0.5.tgz#04e520dc661d67f49aa7950f11b7c780fd2fdbd3"
   integrity sha512-/yA6rFjfjiFb8D6nCjfFrrGqYQMkOt4J3u2o6s7VYEF/zpA5dw2C9ENJ5fDKkJSCbbwLiEIGVMMee3vMEip2zA==
 
-gatsby-plugin-sass@2.3.10:
-  version "2.3.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.3.10.tgz#a6aec4a218318c613cf09de8defa42300283f6b9"
-  integrity sha512-ZF/+SNMogv6C+UksTLGCwQxeA5224fmp1ojJ/wOkmwMM83HClQ5wwcs0utQZmIOCAszEn+wi2wul1Tyiyh4YBg==
+gatsby-plugin-sass@2.3.11:
+  version "2.3.11"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sass/-/gatsby-plugin-sass-2.3.11.tgz#983039536d3a981b11612f2af17d7921acbea24e"
+  integrity sha512-1QlTPx7s82YhAnDYOhhPmyD7YlVEoNBykelS7RmoEMZTpBhE+SYgQKdL6lsdEUGp8QLwU8VKTRL0SAlrkUwmJA==
   dependencies:
     "@babel/runtime" "^7.10.3"
     sass-loader "^7.3.1"
