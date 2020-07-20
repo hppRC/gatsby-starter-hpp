@@ -58,7 +58,7 @@
     "gatsby-plugin-robots-txt": "1.5.1",
     "gatsby-plugin-root-import": "2.0.5",
     "gatsby-plugin-sass": "2.3.12",
-    "gatsby-plugin-sharp": "2.6.19",
+    "gatsby-plugin-sharp": "2.6.20",
     "gatsby-plugin-ts-config": "0.2.3",
     "gatsby-plugin-typescript": "2.4.15",
     "gatsby-plugin-webpack-bundle-analyzer": "1.0.5",
