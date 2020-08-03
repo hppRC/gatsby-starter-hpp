@@ -49,7 +49,7 @@
     "gatsby-plugin-google-analytics": "2.3.13",
     "gatsby-plugin-lodash": "3.3.10",
     "gatsby-plugin-manifest": "2.4.21",
-    "gatsby-plugin-mdx": "1.2.32",
+    "gatsby-plugin-mdx": "1.2.33",
     "gatsby-plugin-netlify": "2.3.11",
     "gatsby-plugin-netlify-cache": "1.2.0",
     "gatsby-plugin-offline": "3.2.21",
