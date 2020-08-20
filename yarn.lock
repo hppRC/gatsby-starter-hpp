@@ -14513,10 +14513,10 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sanitize.css@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-11.0.0.tgz#29bb394c0543616f31cd8c58fcba8323a60e2ef6"
-  integrity sha512-Ox0X2lk0kOGeODJgT9S9HFv0j5Cz89ir9ILylj62/vejHPdMmahmetfocoQwyiAnseeXyDa+KIbO6ZQJe5n2Lg==
+sanitize.css@^12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/sanitize.css/-/sanitize.css-12.0.0.tgz#5fa4ece10330b8358c594d5f0250c054ff20776c"
+  integrity sha512-WtPSit2lR9FdrTNeSHPEHBbz3ncAO8U4e1rWxWUYzXu4Jwj7S1jNL/CHSXA3XRYA19HMG/jbbYnwWJOyaEM8Vw==
 
 sass-graph@2.2.5:
   version "2.2.5"
