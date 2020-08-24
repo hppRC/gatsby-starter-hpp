@@ -67,7 +67,7 @@
     "gatsby-source-filesystem": "2.3.25",
     "gatsby-transformer-sharp": "2.5.13",
     "node-sass": "4.14.1",
-    "prettier": "2.0.5",
+    "prettier": "2.1.0",
     "stylelint": "13.6.1",
     "stylelint-config-recess-order": "2.1.0",
     "stylelint-config-recommended": "3.0.0",
