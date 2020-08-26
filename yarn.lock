@@ -8135,13 +8135,12 @@ gatsby-remark-images@3.3.27:
     unist-util-select "^1.5.0"
     unist-util-visit-parents "^2.1.2"
 
-gatsby-remark-relative-images@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-relative-images/-/gatsby-remark-relative-images-1.0.1.tgz#0ecc262943d8d6decad20d32765a2f646886e734"
-  integrity sha512-wRe7L8VfSMy0ObrwA7DH69EFM2jeYKv/q0b016kupE3raSxaaKUmPgkYf3FvUtD1md6VpPwMn6sicZRdDyROAg==
+gatsby-remark-relative-images@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-relative-images/-/gatsby-remark-relative-images-1.1.1.tgz#2087e3700d668fd7712425bf8d0e1d1630c476cd"
+  integrity sha512-iPn3NmpzYP8Zdri0veNCFfbroRY/to7Mo6h/NzQlAZnQuQCg4ylyhkbK/ou2oLLdSYrW7ppgQmAvkv7j1dgpNA==
   dependencies:
     cheerio "1.0.0-rc.3"
-    is-relative-url "3.0.0"
     lodash "4.17.20"
     traverse "0.6.6"
     unist-util-select "3.0.1"
@@ -10049,7 +10048,7 @@ is-regexp@^2.0.0:
   resolved "https://registry.yarnpkg.com/is-regexp/-/is-regexp-2.1.0.tgz#cd734a56864e23b956bf4e7c66c396a4c0b22c2d"
   integrity sha512-OZ4IlER3zmRIoB9AqNhEggVxqIH4ofDns5nRrPS6yQxXE1TPCUpFznBfRQmQa8uC+pXqjMnukiJBxCisIxiLGA==
 
-is-relative-url@3.0.0, is-relative-url@^3.0.0:
+is-relative-url@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/is-relative-url/-/is-relative-url-3.0.0.tgz#f623c8e26baa5bd3742b3b7ec074f50f3b45b3f3"
   integrity sha512-U1iSYRlY2GIMGuZx7gezlB5dp1Kheaym7zKzO1PV06mOihiWTXejLwm4poEJysPyXF+HtK/BEd0DVlcCh30pEA==
