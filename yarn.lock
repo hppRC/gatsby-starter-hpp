@@ -8135,12 +8135,13 @@ gatsby-remark-images@3.3.27:
     unist-util-select "^1.5.0"
     unist-util-visit-parents "^2.1.2"
 
-gatsby-remark-relative-images@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-relative-images/-/gatsby-remark-relative-images-1.1.1.tgz#2087e3700d668fd7712425bf8d0e1d1630c476cd"
-  integrity sha512-iPn3NmpzYP8Zdri0veNCFfbroRY/to7Mo6h/NzQlAZnQuQCg4ylyhkbK/ou2oLLdSYrW7ppgQmAvkv7j1dgpNA==
+gatsby-remark-relative-images@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-relative-images/-/gatsby-remark-relative-images-2.0.0.tgz#8bc363867b28a33fc6073c01107d6ecadb2446ec"
+  integrity sha512-48fuqKIAJ90JpCgMU1lAes216WvDzq5f/Rk4qk2uudoLEjsuKprmx9PbSBkLiVCb7+/bKOw4gMTexIUfatG7RQ==
   dependencies:
     cheerio "1.0.0-rc.3"
+    is-invalid-path "1.0.2"
     lodash "4.17.20"
     traverse "0.6.6"
     unist-util-select "3.0.1"
@@ -9909,6 +9910,11 @@ is-installed-globally@^0.1.0:
   dependencies:
     global-dirs "^0.1.0"
     is-path-inside "^1.0.0"
+
+is-invalid-path@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/is-invalid-path/-/is-invalid-path-1.0.2.tgz#2f84731559f4936abcf1b227632719cf45c5dc0e"
+  integrity sha512-6KLcFrPCEP3AFXMfnWrIFkZpYNBVzZAoBJJDEZKtI3LXkaDjM3uFMJQjxiizUuZTZ9Oh9FNv/soXbx5TcpaDmA==
 
 is-invalid-path@^0.1.0:
   version "0.1.0"
