@@ -8135,10 +8135,10 @@ gatsby-remark-images@3.3.27:
     unist-util-select "^1.5.0"
     unist-util-visit-parents "^2.1.2"
 
-gatsby-remark-relative-images@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-relative-images/-/gatsby-remark-relative-images-2.0.0.tgz#8bc363867b28a33fc6073c01107d6ecadb2446ec"
-  integrity sha512-48fuqKIAJ90JpCgMU1lAes216WvDzq5f/Rk4qk2uudoLEjsuKprmx9PbSBkLiVCb7+/bKOw4gMTexIUfatG7RQ==
+gatsby-remark-relative-images@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-relative-images/-/gatsby-remark-relative-images-2.0.2.tgz#17a26ba15762670c8125a33ecd8316a0124cb06f"
+  integrity sha512-VD8mHbTDvSKIbpJ5pWOWdooDhDsU5lh6QUg5d9bw0yq+BJRpl2NnUDFV3L+S2E2CSKonJ9rKZ/SPMpc7nfLG+w==
   dependencies:
     cheerio "1.0.0-rc.3"
     is-invalid-path "1.0.2"
