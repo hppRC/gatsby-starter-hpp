@@ -50,7 +50,7 @@
     "gatsby-plugin-lodash": "3.3.13",
     "gatsby-plugin-manifest": "2.4.34",
     "gatsby-plugin-mdx": "1.2.46",
-    "gatsby-plugin-netlify": "2.3.17",
+    "gatsby-plugin-netlify": "2.3.18",
     "gatsby-plugin-netlify-cache": "1.2.0",
     "gatsby-plugin-offline": "3.2.31",
     "gatsby-plugin-react-helmet": "3.3.14",
