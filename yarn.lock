@@ -8777,10 +8777,10 @@ gatsby-plugin-manifest@2.4.35:
     semver "^7.3.2"
     sharp "^0.25.4"
 
-gatsby-plugin-mdx@1.2.47:
-  version "1.2.47"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.2.47.tgz#34274e63ed533e3c636109901dd7002083e4e96d"
-  integrity sha512-tE1HBUPYQcgei2TwaxIfwWjWYmJZKA5WyWlY/nd/rmzvug9s8Qf/PwRWVUS0XurFNH+dmX6SwXDsDljvS6VW1A==
+gatsby-plugin-mdx@1.2.48:
+  version "1.2.48"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.2.48.tgz#81dc342468c06cfaf6fc64c8890c26e48ffbc175"
+  integrity sha512-pjeszZQHjmn8i2jMmOSmgL4vcPW4rCBsRgP93ba4GVfcEc05kqLnN62ciXvOL/KUBGFxfC4cN/PtEIlxXu+lqw==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/generator" "^7.11.6"
@@ -8838,10 +8838,10 @@ gatsby-plugin-netlify@2.3.20:
     lodash "^4.17.20"
     webpack-assets-manifest "^3.1.1"
 
-gatsby-plugin-offline@3.2.33:
-  version "3.2.33"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.2.33.tgz#04b994559272ba469445ac869a005171096ca775"
-  integrity sha512-M2lNFEQq3LmXEEyKfn3jIKyah+2K5GhBpkadq0H+ZChtVu3wk04gM40tojSFfWN+hMXxElCICYxPM3IToBLdUA==
+gatsby-plugin-offline@3.2.34:
+  version "3.2.34"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.2.34.tgz#0bfbe26bcc4a0c2636a8c224b32c5c803ae26242"
+  integrity sha512-93kSC0Fbdvg0JCv6xr3I1iclv5hCrMzXFXb/tyAulyP+Wk4hN/UGsTvwbSiCeSkAjKYUZ7zo/aDzl1Dw7mIfqQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
     cheerio "^1.0.0-rc.3"
