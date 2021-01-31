@@ -7,7 +7,6 @@ import styled from '@emotion/styled';
 
 const Component: React.FCX = ({ className }) => (
   <main className={className}>
-    <h1>About</h1>
     <AboutMDX />
   </main>
 );
